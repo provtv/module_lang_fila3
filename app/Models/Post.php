@@ -221,12 +221,28 @@ class Post extends Model
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type']) 
                 ? $this->attributes['post_type'] : '';
             $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id']) 
+<<<<<<< HEAD
                 ? (string) $this->attributes['post_id'] : '';
+=======
+<<<<<<< HEAD
+                ? (string) $this->attributes['post_id'] : '';
+=======
+                ? is_string($this) ? $this : (string) $this->attributes['post_id'] : '';
+>>>>>>> origin/dev
+>>>>>>> origin/dev
             $value = $postType . ' ' . $postId;
         } else {
             // Assicuriamoci che post_type e post_id siano stringhe
             $postType = is_string($this->post_type) ? $this->post_type : '';
+<<<<<<< HEAD
             $postId = is_scalar($this->post_id) ? (string) $this->post_id : '';
+=======
+<<<<<<< HEAD
+            $postId = is_scalar($this->post_id) ? (string) $this->post_id : '';
+=======
+            $postId = is_scalar($this->post_id) ? is_string($this) ? $this : (string) $this->post_id : '';
+>>>>>>> origin/dev
+>>>>>>> origin/dev
             $value = $postType . ' ' . $postId;
         }
 
@@ -251,9 +267,27 @@ class Post extends Model
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type']) 
                 ? $this->attributes['post_type'] : '';
             $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id']) 
+<<<<<<< HEAD
                 ? (string) $this->attributes['post_id'] : '';
             $value = $postType . ' ' . $postId;
         }
+=======
+<<<<<<< HEAD
+                ? (string) $this->attributes['post_id'] : '';
+            $value = $postType . ' ' . $postId;
+        }
+=======
+                ? is_string($this) ? $this : (string) $this->attributes['post_id'] : '';
+            $value = $postType . ' ' . $postId;
+        }
+        if (null === $value) {
+            $value = 'u-'.random_int(1, 1000);
+        }
+        $value = Str::slug($value);
+        $this->guid = $value;
+        $this->save();
+>>>>>>> origin/dev
+>>>>>>> origin/dev
 
         return $value;
     }
