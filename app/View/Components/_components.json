@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 []
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8a2fcfb (.)
 [
     {
         "name": "flag",
@@ -11,7 +14,10 @@
         "ns": "Modules\\Lang\\View\\Components\\Flag"
     }
 ]
+<<<<<<< HEAD
 =======
 []
 >>>>>>> f0c9bb8 (.)
 >>>>>>> cc26d67 (fix: auto resolve conflict)
+=======
+>>>>>>> 8a2fcfb (.)

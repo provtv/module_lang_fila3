@@ -14,6 +14,7 @@ class LangField implements CastsAttributes
      *
      * @param BaseModelLang $model
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param string $key
 =======
 <<<<<<< HEAD
@@ -22,6 +23,9 @@ class LangField implements CastsAttributes
      * @param string        $key
 >>>>>>> f0c9bb8 (.)
 >>>>>>> cc26d67 (fix: auto resolve conflict)
+=======
+     * @param string        $key
+>>>>>>> 8a2fcfb (.)
      * @param array         $attributes
      */
     public function get($model, $key, $value, $attributes)
@@ -34,6 +38,7 @@ class LangField implements CastsAttributes
      *
      * @param BaseModelLang $model
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> cc26d67 (fix: auto resolve conflict)
@@ -44,12 +49,17 @@ class LangField implements CastsAttributes
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 8a2fcfb (.)
      * @param string        $key
      * @param array         $attributes
      * @param string        $key
      * @param string        $value
+<<<<<<< HEAD
 >>>>>>> f0c9bb8 (.)
 >>>>>>> cc26d67 (fix: auto resolve conflict)
+=======
+>>>>>>> 8a2fcfb (.)
      */
     public function set($model, $key, $value, $attributes): array
     {

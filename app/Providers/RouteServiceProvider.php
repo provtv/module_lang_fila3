@@ -59,12 +59,15 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
     {
         parent::register();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
         // $this->registerLang();
 >>>>>>> f0c9bb8 (.)
 >>>>>>> cc26d67 (fix: auto resolve conflict)
+=======
+>>>>>>> 8a2fcfb (.)
     }
 
     /**
@@ -75,13 +78,17 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
     public function registerLang(): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> cc26d67 (fix: auto resolve conflict)
+=======
+>>>>>>> 8a2fcfb (.)
         /** @var array<string, array<string, string|null>> $locales */
         $locales = config('laravellocalization.supportedLocales');
-        
+
         if (! is_array($locales)) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -91,12 +98,15 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
         if (! \is_array($locales)) {
 >>>>>>> f0c9bb8 (.)
 >>>>>>> cc26d67 (fix: auto resolve conflict)
+=======
+>>>>>>> 8a2fcfb (.)
             $locales = ['it' => ['name' => 'it'], 'en' => ['name' => 'en']];
         }
-        
+
         /** @var array<string> $langs */
         $langs = array_keys($locales);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -109,19 +119,25 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
         */
 >>>>>>> f0c9bb8 (.)
 >>>>>>> cc26d67 (fix: auto resolve conflict)
+=======
+>>>>>>> 8a2fcfb (.)
         $n = 1;
         if (inAdmin()) {
             $n = 3;
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> cc26d67 (fix: auto resolve conflict)
+=======
+>>>>>>> 8a2fcfb (.)
         if (in_array(request()->segment($n), $langs, false)) {
             /** @var string|null $lang */
             $lang = request()->segment($n);
             if ($lang !== null) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -131,6 +147,8 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
             if (null !== $lang) {
 >>>>>>> f0c9bb8 (.)
 >>>>>>> cc26d67 (fix: auto resolve conflict)
+=======
+>>>>>>> 8a2fcfb (.)
                 app()->setLocale($lang);
             }
         }
