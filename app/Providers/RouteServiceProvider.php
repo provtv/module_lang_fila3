@@ -58,6 +58,13 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
     public function register(): void
     {
         parent::register();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+        // $this->registerLang();
+>>>>>>> f0c9bb8 (.)
+>>>>>>> cc26d67 (fix: auto resolve conflict)
     }
 
     /**
@@ -67,25 +74,63 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
      */
     public function registerLang(): void
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> cc26d67 (fix: auto resolve conflict)
         /** @var array<string, array<string, string|null>> $locales */
         $locales = config('laravellocalization.supportedLocales');
         
         if (! is_array($locales)) {
+<<<<<<< HEAD
+=======
+=======
+        /** @var array<string, array<string, string>>|null $locales */
+        $locales = config('laravellocalization.supportedLocales');
+        
+        if (! \is_array($locales)) {
+>>>>>>> f0c9bb8 (.)
+>>>>>>> cc26d67 (fix: auto resolve conflict)
             $locales = ['it' => ['name' => 'it'], 'en' => ['name' => 'en']];
         }
         
         /** @var array<string> $langs */
         $langs = array_keys($locales);
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+        /*
+        if (! \is_array($langs)) {
+            throw new \Exception('[.__LINE__.]['.class_basename(self::class).']');
+        }
+        \getRouteParameters();
+        */
+>>>>>>> f0c9bb8 (.)
+>>>>>>> cc26d67 (fix: auto resolve conflict)
         $n = 1;
         if (inAdmin()) {
             $n = 3;
         }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> cc26d67 (fix: auto resolve conflict)
         if (in_array(request()->segment($n), $langs, false)) {
             /** @var string|null $lang */
             $lang = request()->segment($n);
             if ($lang !== null) {
+<<<<<<< HEAD
+=======
+=======
+        if (\in_array(request()->segment($n), $langs, false)) {
+            /** @var string|null $lang */
+            $lang = request()->segment($n);
+            if (null !== $lang) {
+>>>>>>> f0c9bb8 (.)
+>>>>>>> cc26d67 (fix: auto resolve conflict)
                 app()->setLocale($lang);
             }
         }

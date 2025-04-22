@@ -8,11 +8,25 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Models;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+use DB;
+>>>>>>> f0c9bb8 (.)
+>>>>>>> cc26d67 (fix: auto resolve conflict)
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Query\Builder as QueryBuilder;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\DB;
+=======
+<<<<<<< HEAD
+use Illuminate\Support\Facades\DB;
+=======
+>>>>>>> f0c9bb8 (.)
+>>>>>>> cc26d67 (fix: auto resolve conflict)
 
 /**
  * Modules\Lang\Models\Translation.
@@ -25,8 +39,18 @@ use Illuminate\Support\Facades\DB;
  * @property string|null $updated_by
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
+<<<<<<< HEAD
  * @property string $namespace
  * @property string $group
+=======
+<<<<<<< HEAD
+ * @property string $namespace
+ * @property string $group
+=======
+ * @property string      $namespace
+ * @property string      $group
+>>>>>>> f0c9bb8 (.)
+>>>>>>> cc26d67 (fix: auto resolve conflict)
  * @property string|null $item
  *
  * @method static \Illuminate\Database\Eloquent\Builder|Translation   newModelQuery()
@@ -90,12 +114,28 @@ class Translation extends BaseModel
 
     public function scopeSelectDistinctGroup(EloquentBuilder $query): EloquentBuilder|QueryBuilder
     {
+<<<<<<< HEAD
         $select = match (DB::getDriverName()) {
+=======
+<<<<<<< HEAD
+        $select = match (DB::getDriverName()) {
+=======
+        $select = match (\DB::getDriverName()) {
+>>>>>>> f0c9bb8 (.)
+>>>>>>> cc26d67 (fix: auto resolve conflict)
             'mysql' => 'DISTINCT `group`',
             default => 'DISTINCT "group"',
         };
 
+<<<<<<< HEAD
         return $query->select(DB::raw($select));
+=======
+<<<<<<< HEAD
+        return $query->select(DB::raw($select));
+=======
+        return $query->select(\DB::raw($select));
+>>>>>>> f0c9bb8 (.)
+>>>>>>> cc26d67 (fix: auto resolve conflict)
     }
 
     /*

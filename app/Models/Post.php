@@ -92,12 +92,26 @@ use Spatie\Sluggable\SlugOptions;
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  *
  * @mixin \Eloquent
+<<<<<<< HEAD
  * @mixin Eloquent
+=======
+<<<<<<< HEAD
+=======
+ * @mixin Eloquent
+>>>>>>> f0c9bb8 (.)
+>>>>>>> cc26d67 (fix: auto resolve conflict)
  */
 class Post extends Model
 {
     use HasFactory;
     use HasSlug;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    use Updater;
+    use Cachable;
+=======
+>>>>>>> cc26d67 (fix: auto resolve conflict)
 
     // use Cachable;
     use Updater;
@@ -107,6 +121,10 @@ class Post extends Model
 
     }
     */
+<<<<<<< HEAD
+=======
+>>>>>>> f0c9bb8 (.)
+>>>>>>> cc26d67 (fix: auto resolve conflict)
 
     final public const SEARCHABLE_FIELDS = ['title', 'guid', 'txt'];
 
@@ -125,7 +143,14 @@ class Post extends Model
     /** @var int */
     protected $perPage = 30;
 
+<<<<<<< HEAD
     // use Searchable;
+=======
+<<<<<<< HEAD
+=======
+    // use Searchable;
+>>>>>>> f0c9bb8 (.)
+>>>>>>> cc26d67 (fix: auto resolve conflict)
     /** @var string */
     protected $connection = 'lang';
 
@@ -144,6 +169,41 @@ class Post extends Model
         // ------ BUFFER ----
         'url', 'url_lang', // buffer
         'image_resize_src', // buffer
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        'category_id', 'image', 'content',
+        'published', 'created_by', 'updated_by',
+    ];
+
+    /**
+     * The attributes that should be cast.
+     *
+     * @var array<string, string>
+     */
+    protected $casts = [
+        'id' => 'integer',
+        'post_id' => 'integer',
+        'author_id' => 'integer',
+        'category_id' => 'integer',
+        'published' => 'integer',
+    ];
+
+    /**
+     * The accessors to append to the model's array form.
+     *
+     * @var array<int, string>
+     */
+    protected $appends = [
+        'url',
+        'url_lang',
+        'image_resize_src',
+        'linked_count',
+        'related_count',
+        'relatedrev_count',
+    ];
+=======
+>>>>>>> cc26d67 (fix: auto resolve conflict)
     ];
 
     /** @var list<string> */
@@ -160,6 +220,10 @@ class Post extends Model
         return inAdmin() ? 'guid' : 'post_id';
     }
     */
+<<<<<<< HEAD
+=======
+>>>>>>> f0c9bb8 (.)
+>>>>>>> cc26d67 (fix: auto resolve conflict)
 
     /**
      * Get the options for generating the slug.
@@ -171,6 +235,66 @@ class Post extends Model
             ->saveSlugsTo('guid');
     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    /**
+     * Get the owning commentable model.
+     */
+    public function post(): MorphTo
+    {
+        return $this->morphTo();
+    }
+
+    /**
+     * ---.
+     */
+    public function getUrlAttribute(): ?string
+    {
+        return null;
+    }
+
+    /**
+     * ---.
+     */
+    public function getUrlLangAttribute(): ?array
+    {
+        return null;
+    }
+
+    /**
+     * ---.
+     */
+    public function getImageResizeSrcAttribute(): ?array
+    {
+        return null;
+    }
+
+    /**
+     * ---.
+     */
+    public function getLinkedCountAttribute(): ?string
+    {
+        return null;
+    }
+
+    /**
+     * ---.
+     */
+    public function getRelatedCountAttribute(): ?string
+    {
+        return null;
+    }
+
+    /**
+     * ---.
+     */
+    public function getRelatedrevCountAttribute(): ?string
+    {
+        return null;
+    }
+=======
+>>>>>>> cc26d67 (fix: auto resolve conflict)
     // -------- relationship ------
     /**
      * @return MorphTo
@@ -193,6 +317,10 @@ class Post extends Model
                     ->where($post_table.'.guid', '!=', $post_type)
                     ->orderBy($table.'.updated_at', 'desc')
                     ->with('post')
+<<<<<<< HEAD
+=======
+                    ;
+>>>>>>> cc26d67 (fix: auto resolve conflict)
 
         return $rows;
     }
@@ -200,6 +328,10 @@ class Post extends Model
 
     // end function
     // -------------- MUTATORS ------------------
+<<<<<<< HEAD
+=======
+>>>>>>> f0c9bb8 (.)
+>>>>>>> cc26d67 (fix: auto resolve conflict)
 
     public function setTitleAttribute(string $value): void
     {
@@ -208,7 +340,15 @@ class Post extends Model
     }
 
     /**
+<<<<<<< HEAD
      * Undocumented function.
+=======
+<<<<<<< HEAD
+     * ---.
+=======
+     * Undocumented function.
+>>>>>>> f0c9bb8 (.)
+>>>>>>> cc26d67 (fix: auto resolve conflict)
      */
     public function getTitleAttribute(?string $value): ?string
     {
@@ -218,6 +358,7 @@ class Post extends Model
 
         if (! empty($this->attributes['post_type'])) {
             // Assicuriamoci che i valori siano stringhe prima della concatenazione
+<<<<<<< HEAD
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type']) 
                 ? $this->attributes['post_type'] : '';
             $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id']) 
@@ -230,6 +371,19 @@ class Post extends Model
                 ? is_string($this) ? $this : (string) $this->attributes['post_id'] : '';
 >>>>>>> origin/dev
 >>>>>>> origin/dev
+=======
+<<<<<<< HEAD
+            $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
+                ? $this->attributes['post_type'] : '';
+            $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id'])
+                ? (string) $this->attributes['post_id'] : '';
+=======
+            $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type']) 
+                ? $this->attributes['post_type'] : '';
+            $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id']) 
+                ? (string)$this->attributes['post_id'] : '';
+>>>>>>> f0c9bb8 (.)
+>>>>>>> cc26d67 (fix: auto resolve conflict)
             $value = $postType . ' ' . $postId;
         } else {
             // Assicuriamoci che post_type e post_id siano stringhe
@@ -238,11 +392,16 @@ class Post extends Model
             $postId = is_scalar($this->post_id) ? (string) $this->post_id : '';
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
             $postId = is_scalar($this->post_id) ? (string) $this->post_id : '';
 =======
             $postId = is_scalar($this->post_id) ? is_string($this) ? $this : (string) $this->post_id : '';
 >>>>>>> origin/dev
 >>>>>>> origin/dev
+=======
+            $postId = is_scalar($this->post_id) ? (string)$this->post_id : '';
+>>>>>>> f0c9bb8 (.)
+>>>>>>> cc26d67 (fix: auto resolve conflict)
             $value = $postType . ' ' . $postId;
         }
 
@@ -264,6 +423,7 @@ class Post extends Model
         $value = $this->title;
         if ('' === $value) {
             // Assicuriamoci che i valori siano stringhe prima della concatenazione
+<<<<<<< HEAD
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type']) 
                 ? $this->attributes['post_type'] : '';
             $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id']) 
@@ -278,6 +438,19 @@ class Post extends Model
         }
 =======
                 ? is_string($this) ? $this : (string) $this->attributes['post_id'] : '';
+=======
+<<<<<<< HEAD
+            $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
+                ? $this->attributes['post_type'] : '';
+            $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id'])
+                ? (string) $this->attributes['post_id'] : '';
+=======
+            $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type']) 
+                ? $this->attributes['post_type'] : '';
+            $postId = isset($this->attributes['post_id']) && is_scalar($this->attributes['post_id']) 
+                ? (string)$this->attributes['post_id'] : '';
+>>>>>>> f0c9bb8 (.)
+>>>>>>> cc26d67 (fix: auto resolve conflict)
             $value = $postType . ' ' . $postId;
         }
         if (null === $value) {
@@ -286,8 +459,11 @@ class Post extends Model
         $value = Str::slug($value);
         $this->guid = $value;
         $this->save();
+<<<<<<< HEAD
 >>>>>>> origin/dev
 >>>>>>> origin/dev
+=======
+>>>>>>> cc26d67 (fix: auto resolve conflict)
 
         return $value;
     }
@@ -320,4 +496,12 @@ class Post extends Model
             'published_at' => 'datetime',
         ];
     }
+<<<<<<< HEAD
 }// end class
+=======
+<<<<<<< HEAD
+}
+=======
+}// end class
+>>>>>>> f0c9bb8 (.)
+>>>>>>> cc26d67 (fix: auto resolve conflict)
