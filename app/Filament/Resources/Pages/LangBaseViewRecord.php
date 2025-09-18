@@ -17,7 +17,10 @@ abstract class LangBaseViewRecord extends XotBaseViewRecord
 
     protected function getHeaderActions(): array
     {
+<<<<<<< HEAD
         /** @var array<string, \Filament\Actions\Action> */
+=======
+>>>>>>> dc312f89 (.)
         return [
             Actions\LocaleSwitcher::make(),
             ...parent::getHeaderActions(),

@@ -55,6 +55,7 @@
 - [Traduzioni](packages/translations.md)
 - [SEO](packages/seo.md)
 - [Performance](packages/performance.md) 
+<<<<<<< HEAD
 ### Versione HEAD
 
 
@@ -75,3 +76,5 @@
 
 ---
 
+=======
+>>>>>>> dc312f89 (.)

@@ -8,8 +8,11 @@ https://medium.com/@mwaqasiu/translating-text-in-laravel-made-easy-with-translat
 
 //----------------
 
+<<<<<<< HEAD
 ## Extra risorse da _docs
 
 (Nessun nuovo link da aggiungere: i link di _docs/links01.txt sono già presenti in questo file)
 
+=======
+>>>>>>> dc312f89 (.)
 

@@ -4,6 +4,7 @@ https://filamentphp.com/plugins/34ml-translatable-field
 
 
 
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di filament.md
 * [filament.md](docs/tecnico/filament/filament.md)
@@ -20,3 +21,5 @@ https://filamentphp.com/plugins/34ml-translatable-field
 ## Extra risorse da _docs
 
 (Nessun nuovo link da aggiungere: i link di _docs/filament.txt sono già presenti in questo file)
+=======
+>>>>>>> dc312f89 (.)

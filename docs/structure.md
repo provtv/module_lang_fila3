@@ -316,9 +316,15 @@ Lang_old/database/factories
 Lang_old/database/migrations
 Lang_old/database/seeders
 Lang_old/docs
+<<<<<<< HEAD
 Lang_old/project_docs/.github
 Lang_old/project_docs/.github/workflows
 Lang_old/project_docs/performance
+=======
+Lang_old/docs/.github
+Lang_old/docs/.github/workflows
+Lang_old/docs/performance
+>>>>>>> dc312f89 (.)
 Lang_old/lang
 Lang_old/lang/it
 Lang_old/lang/lang
@@ -469,6 +475,7 @@ tests/Unit
 
 ## Collegamenti alla documentazione generale
 
+<<<<<<< HEAD
 - [Analisi strutturale complessiva](/project_docs/phpstan/modules_structure_analysis.md)
 - [Report PHPStan](/project_docs/phpstan/)
 
@@ -496,4 +503,8 @@ tests/Unit
 - Tutti i comandi console sono autoregistrati tramite la struttura di XotBaseServiceProvider.
 - Non aggiungere mai manualmente $this->commands([...]) nei provider.
 - Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
+=======
+- [Analisi strutturale complessiva](/docs/phpstan/modules_structure_analysis.md)
+- [Report PHPStan](/docs/phpstan/)
+>>>>>>> dc312f89 (.)
 

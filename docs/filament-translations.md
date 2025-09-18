@@ -2,6 +2,7 @@
 
 > **Regola fondamentale:** MAI utilizzare il metodo `->label()` nei componenti Filament, specialmente nei Blocks. Le etichette sono gestite automaticamente dal LangServiceProvider.
 
+<<<<<<< HEAD
 # ⚠️ Regola fondamentale: MAI usare chiavi che terminano con `.navigation` nei file di traduzione
 
 - Usa sempre la struttura array per navigation:
@@ -23,6 +24,8 @@
   - [translation_keys_rules.md](../translation_keys_rules.md)
   - [docs Modulo Generico](../../<nome modulo>/docs/translations.md)
 
+=======
+>>>>>>> dc312f89 (.)
 ## Struttura Corretta per le Traduzioni
 
 Le traduzioni in Filament devono seguire questa struttura nei file di traduzione:
@@ -89,13 +92,19 @@ TextInput::make('title')
 
 ## Collegamenti Bidirezionali
 
+<<<<<<< HEAD
 - [Convenzioni Namespace Filament](../../Cms/project_docs/convenzioni-namespace-filament.md) - Regole per i namespace e componenti Filament
 - [Regole Generali](../../Xot/project_docs/README.md) - Best practice e linee guida generali
+=======
+- [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md) - Regole per i namespace e componenti Filament
+- [Regole Generali](../../Xot/docs/README.md) - Best practice e linee guida generali
+>>>>>>> dc312f89 (.)
 
 ---
 
 ### Link Bidirezionale
 Questo documento è linkato anche dalla documentazione del modulo Cms per garantire coerenza tra i moduli.
+<<<<<<< HEAD
 
 # ⚠️ Regola vincolante: MAI usare ->label() nei componenti Filament
 
@@ -112,3 +121,5 @@ Tutte le label, placeholder, messaggi e azioni relativi a disponibilità e appun
 - Un solo punto di verità: nessuna duplicazione, nessun lock-in
 - DRY, KISS, serenità del codice
 - Refactoring sicuro, massima estendibilità
+=======
+>>>>>>> dc312f89 (.)

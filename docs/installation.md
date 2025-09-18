@@ -15,6 +15,7 @@ Per installare il bacchetto basta mettere il seguente comando nella linea di com
 composer require laraxot/module_lang
 
 php artisan module_lang:install
+<<<<<<< HEAD
 ### Versione HEAD
 
 ```
@@ -34,3 +35,6 @@ php artisan module_lang:install
 
 ---
 
+=======
+```
+>>>>>>> dc312f89 (.)

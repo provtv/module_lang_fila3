@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌍 Lang - Il SISTEMA di TRADUZIONI più POTENTE! 🗣️
 
 [![PHP Version](https://img.shields.io/badge/PHP-8.2+-blue.svg)](https://php.net)
@@ -540,3 +541,28 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
   <em>Costruito con ❤️ per la comunità Laravel</em>
 </div>
 
+=======
+# Module Lang
+Modulo dedicato alla gestione delle traduzioni
+
+## Aggiungere Modulo nella base del progetto
+Dentro la cartella laravel/Modules
+
+```bash
+git submodule add https://github.com/laraxot/module_lang_fila3.git Lang
+```
+
+## Verificare che il modulo sia attivo
+```bash
+php artisan module:list
+```
+in caso abilitarlo
+```bash
+php artisan module:enable Lang
+```
+
+## Eseguire le migrazioni
+```bash
+php artisan module:migrate Lang
+```
+>>>>>>> dc312f89 (.)

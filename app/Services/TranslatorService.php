@@ -20,13 +20,22 @@ class TranslatorService extends LaravelTranslator
     /**
      * Get the translation for the given key.
      *
+<<<<<<< HEAD
      * @param string      $key
+=======
+     * @param string $key
+>>>>>>> dc312f89 (.)
      * @param string|null $locale
      * @param bool        $fallback
      *
      * @return string|array
      */
+<<<<<<< HEAD
     public function get(): void {
+=======
+    public function get($key, array $replace = [], $locale = null, $fallback = true)
+    {
+>>>>>>> dc312f89 (.)
         // Get without fallback
         $result = parent::get($key, $replace, $locale, false);
         if ($result === $key) {
@@ -40,7 +49,12 @@ class TranslatorService extends LaravelTranslator
     }
 
     /*
+<<<<<<< HEAD
     public function setTranslationManager(): void {
+=======
+    public function setTranslationManager(Manager $manager)
+    {
+>>>>>>> dc312f89 (.)
         $this->manager = $manager;
     }
     */

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Traduzioni nel Progetto
 
 ## Regole Fondamentali
@@ -123,3 +124,72 @@ Prima di committare:
 - [Filament Translations](/.cursor/rules/filament-translations.rule)
 - [Laravel Localization](https://laravel.com/docs/10.x/localization)
 - [Best Practices](/.cursor/rules/translations.rule)
+=======
+# Gestione delle Traduzioni
+
+## Documentazione Principale
+
+- [Regole Generali](../../Xot/docs/translations.md) - Regole generali per tutte le traduzioni
+- [Regole CMS](../../Cms/docs/translations.md) - Regole specifiche per il CMS
+
+## Struttura delle Traduzioni
+
+### 1. Regole Generali
+- Tutte le traduzioni devono essere gestite tramite file di traduzione
+- Non utilizzare mai stringhe hardcoded
+- Seguire la struttura gerarchica dei namespace
+- Mantenere la coerenza tra i file
+- Utilizzare il prefisso del modulo (es: `cms::`) per le traduzioni
+- Mantenere la coerenza tra le diverse lingue
+
+### 2. Regole Specifiche CMS
+- Gestione dei blocchi di contenuto
+- Traduzioni per form e campi
+- Struttura gerarchica per sezioni e blocchi
+- Tooltip e descrizioni per tutti i campi
+
+## Best Practices
+
+### 1. Organizzazione
+- Mantenere una struttura coerente
+- Utilizzare namespace corretti
+- Creare collegamenti bidirezionali
+- Documentare le eccezioni
+
+### 2. Implementazione
+- Utilizzare sempre le traduzioni
+- Aggiungere tooltip descrittivi
+- Includere messaggi di validazione
+- Gestire le traduzioni per le azioni
+
+### 3. Manutenzione
+- Aggiornare regolarmente la documentazione
+- Verificare la presenza di stringhe hardcoded
+- Controllare la coerenza tra i file
+- Testare le traduzioni
+
+## Troubleshooting
+
+### Problemi Comuni
+1. **Stringhe Hardcoded**
+   - Verificare che non ci siano `->label()` con stringhe
+   - Utilizzare sempre le traduzioni
+
+2. **Namespace Errati**
+   - Controllare che i namespace non includano `App`
+   - Seguire la struttura corretta
+
+3. **Traduzioni Mancanti**
+   - Verificare la presenza di tutte le traduzioni
+   - Aggiungere le traduzioni mancanti
+
+4. **Struttura Errata**
+   - Seguire la gerarchia corretta
+   - Mantenere la coerenza tra i file
+
+## Collegamenti Utili
+
+- [Documentazione Laravel](https://laravel.com/docs/10.x/localization)
+- [Best Practices Filament](https://filamentphp.com/docs/3.x/panels/resources/forms#localization)
+- [Guida Traduzioni](https://laravel.com/docs/10.x/localization#using-translation-strings-as-keys) 
+>>>>>>> dc312f89 (.)

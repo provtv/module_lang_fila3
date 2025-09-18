@@ -211,6 +211,7 @@ Implementare:
          ->chunk(1000);
    }
    ```
+<<<<<<< HEAD
 ### Versione HEAD
 
 
@@ -232,3 +233,5 @@ Implementare:
 
 ---
 
+=======
+>>>>>>> dc312f89 (.)

@@ -1,9 +1,12 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 
 
+=======
+>>>>>>> dc312f89 (.)
 return [
     'fields' => [
         'stabilimento' => [

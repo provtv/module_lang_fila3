@@ -1,1 +1,29 @@
+<<<<<<< HEAD
 [{"name":"flag","class":"Flag","module":null,"path":null,"ns":"Modules\\Lang\\View\\Components\\Flag"}]
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+[
+    {
+        "name": "flag",
+        "class": "Flag",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\Lang\\View\\Components\\Flag"
+    }
+]
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+[]
+>>>>>>> aurmich/dev
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+>>>>>>> dc312f89 (.)

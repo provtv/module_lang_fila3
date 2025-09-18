@@ -8,11 +8,20 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Models;
 
+<<<<<<< HEAD
 use DB;
+=======
+>>>>>>> dc312f89 (.)
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Query\Builder as QueryBuilder;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Modules\Xot\Traits\Updater;
+>>>>>>> dc312f89 (.)
 
 /**
  * Modules\Lang\Models\Translation.
@@ -25,9 +34,16 @@ use Illuminate\Support\Carbon;
  * @property string|null $updated_by
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
+<<<<<<< HEAD
  * @property string      $namespace
  * @property string      $group
  * @property string|null $item
+=======
+ * @property string $namespace
+ * @property string $group
+ * @property string|null $item
+ *
+>>>>>>> dc312f89 (.)
  * @method static \Illuminate\Database\Eloquent\Builder|Translation   newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Translation   newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Translation   ofTranslatedGroup(string $group)
@@ -46,6 +62,7 @@ use Illuminate\Support\Carbon;
  * @method static \Illuminate\Database\Eloquent\Builder|Translation   whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Translation   whereValue($value)
  * @method static \Modules\Lang\Database\Factories\TranslationFactory factory($count = null, $state = [])
+<<<<<<< HEAD
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  * @mixin IdeHelperTranslation
@@ -53,10 +70,24 @@ use Illuminate\Support\Carbon;
  */
 class Translation extends BaseModel
 {
+=======
+ *
+ * @property \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+ *
+ * @mixin \Eloquent
+ */
+class Translation extends Model
+{
+    use HasFactory;
+    use Updater;
+
+>>>>>>> dc312f89 (.)
     final public const STATUS_SAVED = 0;
 
     final public const STATUS_CHANGED = 1;
 
+<<<<<<< HEAD
     protected $fillable = [
         'id',
         'lang',
@@ -68,6 +99,31 @@ class Translation extends BaseModel
 
     // protected $table = 'ltm_translations';
     protected $guarded = ['id', 'created_at', 'updated_at'];
+=======
+    /**
+     * @var string
+     */
+    protected $table = 'language_lines';
+
+    /**
+     * @var array<string>
+     */
+    protected $fillable = [
+        'group',
+        'key',
+        'text',
+        'locale',
+    ];
+
+    /**
+     * @var array<string, string>
+     */
+    protected $casts = [
+        'text' => 'array',
+    ];
+
+    // protected $guarded = ['id', 'created_at', 'updated_at'];
+>>>>>>> dc312f89 (.)
 
     /**
      * Undocumented function.
@@ -88,12 +144,20 @@ class Translation extends BaseModel
 
     public function scopeSelectDistinctGroup(EloquentBuilder $query): EloquentBuilder|QueryBuilder
     {
+<<<<<<< HEAD
         $select = match (\DB::getDriverName()) {
+=======
+        $select = match (DB::getDriverName()) {
+>>>>>>> dc312f89 (.)
             'mysql' => 'DISTINCT `group`',
             default => 'DISTINCT "group"',
         };
 
+<<<<<<< HEAD
         return $query->select(\DB::raw($select));
+=======
+        return $query->select(DB::raw($select));
+>>>>>>> dc312f89 (.)
     }
 
     /*
@@ -101,7 +165,12 @@ class Translation extends BaseModel
      *
      * @return string|null
 
+<<<<<<< HEAD
     public function getConnectionName(): void {
+=======
+    public function getConnectionName()
+    {
+>>>>>>> dc312f89 (.)
         if ($connection = config('translation-manager.db_connection')) {
             return $connection;
         }
@@ -109,4 +178,31 @@ class Translation extends BaseModel
         return parent::getConnectionName();
     }
     */
+<<<<<<< HEAD
+=======
+
+    /**
+     * Ottiene il valore tradotto.
+     */
+    public function getTranslation(string $key, ?string $locale = null): ?string
+    {
+        $locale = $locale ?? app()->getLocale();
+        $translations = $this->text;
+
+        return $translations[$key][$locale] ?? null;
+    }
+
+    /**
+     * Imposta una traduzione.
+     *
+     * @param array<string, string> $value
+     */
+    public function setTranslation(string $key, array $value): void
+    {
+        $translations = $this->text;
+        $translations[$key] = $value;
+        $this->text = $translations;
+        $this->save();
+    }
+>>>>>>> dc312f89 (.)
 }

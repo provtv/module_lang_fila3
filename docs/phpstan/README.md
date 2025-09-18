@@ -9,6 +9,7 @@ Data: Wed Apr 23 10:43:32 CEST 2025
 | 1 | ✅ Successo | Nessun errore |
 | 2 | ✅ Successo | Nessun errore |
 | 3 | ❌ Errore | Errore di esecuzione |
+<<<<<<< HEAD
 
 ## Correzioni PHPStan Applicate
 
@@ -122,3 +123,8 @@ $content .= "'" . addslashes(is_string($value) ? $value : (string) $value) . "',
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 
+=======
+## Collegamenti
+
+- [Report Generale](/docs/phpstan/README.md)
+>>>>>>> dc312f89 (.)
