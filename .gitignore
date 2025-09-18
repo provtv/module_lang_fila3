@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ==============================================
 # LARAXOT MODULE LANG - .GITIGNORE
 # ==============================================
@@ -209,6 +210,23 @@ node_modules
 vendor
 /vendor
 vendor/
+=======
+.git-rewrite
+.fuse_hidden*
+.fuse_hidden**.lock
+*.lock
+package-lock.json
+.php-cs-fixer.cache
+*.phar
+*.cache
+node_modules
+/node_modules
+vendor/
+.git-blame-ignore-revs
+.git-blame-ignore-revs
+node_modules
+vendor
+>>>>>>> 0fcceb64 (Squashed 'bashscripts/' content from commit 38660fd8)
 .php-cs-fixer.cache
 .git-blame-ignore-revs
 build/
@@ -217,6 +235,7 @@ build/
 node_modules
 docs/cache/
 cache/
+<<<<<<< HEAD
 *.exe
 
 *:Zone.Identifier
@@ -352,3 +371,15 @@ laravel/storage/views/*
 views
 laravel/storage/framework/sessions/*
 >>>>>>> 688d0704 (first)
+=======
+.git-blame-ignore-revs
+.php-cs-fixer.cache
+*.exe
+**/*.Zone.Identifier
+*:Zone.Identifier
+*:Zone.Identifier
+.php-cs-fixer.cache
+*:Zone.Identifier
+.php-cs-fixer.cache
+**/*.Zone.Identifier
+>>>>>>> 0fcceb64 (Squashed 'bashscripts/' content from commit 38660fd8)

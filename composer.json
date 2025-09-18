@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/module_lang_fila3",
     "description": "",
     "license": "MIT",
@@ -133,3 +134,21 @@
     "prefer-stable": true
 }
 >>>>>>> 688d0704 (first)
+=======
+    "name": "laraxot/bashscripts_fila3",
+    "autoload": {
+        "psr-4": {
+            "Laraxot\\BashscriptsFila3\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "marco76tv",
+            "email": "marco.sottana@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "larastan/larastan": "^3.0"
+    }
+}
+>>>>>>> 0fcceb64 (Squashed 'bashscripts/' content from commit 38660fd8)
