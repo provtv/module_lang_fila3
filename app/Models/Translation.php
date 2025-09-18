@@ -9,19 +9,26 @@ declare(strict_types=1);
 namespace Modules\Lang\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use DB;
 =======
 >>>>>>> dc312f89 (.)
+=======
+>>>>>>> c010b2b8 (.)
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Query\Builder as QueryBuilder;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Modules\Xot\Traits\Updater;
 >>>>>>> dc312f89 (.)
+=======
+use Illuminate\Support\Facades\DB;
+>>>>>>> c010b2b8 (.)
 
 /**
  * Modules\Lang\Models\Translation.
@@ -35,15 +42,21 @@ use Modules\Xot\Traits\Updater;
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property string      $namespace
  * @property string      $group
  * @property string|null $item
 =======
+=======
+>>>>>>> c010b2b8 (.)
  * @property string $namespace
  * @property string $group
  * @property string|null $item
  *
+<<<<<<< HEAD
 >>>>>>> dc312f89 (.)
+=======
+>>>>>>> c010b2b8 (.)
  * @method static \Illuminate\Database\Eloquent\Builder|Translation   newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Translation   newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Translation   ofTranslatedGroup(string $group)
@@ -63,13 +76,21 @@ use Modules\Xot\Traits\Updater;
  * @method static \Illuminate\Database\Eloquent\Builder|Translation   whereValue($value)
  * @method static \Modules\Lang\Database\Factories\TranslationFactory factory($count = null, $state = [])
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  * @mixin IdeHelperTranslation
+=======
+ *
+ * @property \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+ *
+>>>>>>> c010b2b8 (.)
  * @mixin \Eloquent
  */
 class Translation extends BaseModel
 {
+<<<<<<< HEAD
 =======
  *
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
@@ -83,11 +104,16 @@ class Translation extends Model
     use Updater;
 
 >>>>>>> dc312f89 (.)
+=======
+>>>>>>> c010b2b8 (.)
     final public const STATUS_SAVED = 0;
 
     final public const STATUS_CHANGED = 1;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c010b2b8 (.)
     protected $fillable = [
         'id',
         'lang',
@@ -99,6 +125,7 @@ class Translation extends Model
 
     // protected $table = 'ltm_translations';
     protected $guarded = ['id', 'created_at', 'updated_at'];
+<<<<<<< HEAD
 =======
     /**
      * @var string
@@ -124,6 +151,8 @@ class Translation extends Model
 
     // protected $guarded = ['id', 'created_at', 'updated_at'];
 >>>>>>> dc312f89 (.)
+=======
+>>>>>>> c010b2b8 (.)
 
     /**
      * Undocumented function.
@@ -145,19 +174,27 @@ class Translation extends Model
     public function scopeSelectDistinctGroup(EloquentBuilder $query): EloquentBuilder|QueryBuilder
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $select = match (\DB::getDriverName()) {
 =======
         $select = match (DB::getDriverName()) {
 >>>>>>> dc312f89 (.)
+=======
+        $select = match (DB::getDriverName()) {
+>>>>>>> c010b2b8 (.)
             'mysql' => 'DISTINCT `group`',
             default => 'DISTINCT "group"',
         };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $query->select(\DB::raw($select));
 =======
         return $query->select(DB::raw($select));
 >>>>>>> dc312f89 (.)
+=======
+        return $query->select(DB::raw($select));
+>>>>>>> c010b2b8 (.)
     }
 
     /*
@@ -166,11 +203,16 @@ class Translation extends Model
      * @return string|null
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getConnectionName(): void {
 =======
     public function getConnectionName()
     {
 >>>>>>> dc312f89 (.)
+=======
+    public function getConnectionName()
+    {
+>>>>>>> c010b2b8 (.)
         if ($connection = config('translation-manager.db_connection')) {
             return $connection;
         }
@@ -178,6 +220,7 @@ class Translation extends Model
         return parent::getConnectionName();
     }
     */
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -205,4 +248,6 @@ class Translation extends Model
         $this->save();
     }
 >>>>>>> dc312f89 (.)
+=======
+>>>>>>> c010b2b8 (.)
 }

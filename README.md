@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 🌍 Lang - Il SISTEMA di TRADUZIONI più POTENTE! 🗣️
 
 [![PHP Version](https://img.shields.io/badge/PHP-8.2+-blue.svg)](https://php.net)
@@ -542,6 +543,8 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
 </div>
 
 =======
+=======
+>>>>>>> c010b2b8 (.)
 # Module Lang
 Modulo dedicato alla gestione delle traduzioni
 
@@ -564,5 +567,9 @@ php artisan module:enable Lang
 ## Eseguire le migrazioni
 ```bash
 php artisan module:migrate Lang
+<<<<<<< HEAD
 ```
 >>>>>>> dc312f89 (.)
+=======
+```
+>>>>>>> c010b2b8 (.)

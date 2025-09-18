@@ -26,11 +26,16 @@ class TranslationFactory extends Factory
      * @return array
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function definition(): void {
 =======
     public function definition()
     {
 >>>>>>> dc312f89 (.)
+=======
+    public function definition()
+    {
+>>>>>>> c010b2b8 (.)
         return [
             'id' => fake()->randomNumber(5),
             'lang' => fake()->word,

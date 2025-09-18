@@ -17,40 +17,60 @@ class LangData extends Data
     /**
      * Codice identificativo della lingua.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var string
 >>>>>>> dc312f89 (.)
+=======
+     *
+     * @var string
+>>>>>>> c010b2b8 (.)
      */
     public string $id;
 
     /**
      * Nome della lingua.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var string
 >>>>>>> dc312f89 (.)
+=======
+     *
+     * @var string
+>>>>>>> c010b2b8 (.)
      */
     public string $name;
 
     /**
      * HTML della bandiera rappresentativa della lingua.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var string
 >>>>>>> dc312f89 (.)
+=======
+     *
+     * @var string
+>>>>>>> c010b2b8 (.)
      */
     public string $flag;
 
     /**
      * URL per cambiare lingua.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var string
 >>>>>>> dc312f89 (.)
+=======
+     *
+     * @var string
+>>>>>>> c010b2b8 (.)
      */
     public string $url;
 
@@ -59,9 +79,12 @@ class LangData extends Data
      *
      * @param EloquentCollection<int, mixed>|Collection<int, mixed>|array<int, mixed> $data
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
 >>>>>>> dc312f89 (.)
+=======
+>>>>>>> c010b2b8 (.)
      * @return DataCollection<LangData>
      */
     public static function collection(EloquentCollection|Collection|array $data): DataCollection

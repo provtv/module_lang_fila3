@@ -1,12 +1,15 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 
 
 =======
 >>>>>>> dc312f89 (.)
+=======
+>>>>>>> c010b2b8 (.)
 $finder = PhpCsFixer\Finder::create()
     ->notPath('bootstrap/cache')
     ->notPath('storage')
@@ -17,9 +20,12 @@ $finder = PhpCsFixer\Finder::create()
     ->ignoreDotFiles(true)
     ->ignoreVCS(true)
 <<<<<<< HEAD
+<<<<<<< HEAD
 ;
 =======
 >>>>>>> dc312f89 (.)
+=======
+>>>>>>> c010b2b8 (.)
 
 $config = new PhpCsFixer\Config();
 
@@ -48,8 +54,11 @@ $config
     ])
     ->setFinder($finder)
 <<<<<<< HEAD
+<<<<<<< HEAD
 ;
 =======
 >>>>>>> dc312f89 (.)
+=======
+>>>>>>> c010b2b8 (.)
 
 return $config;

@@ -11,16 +11,22 @@
     ],
     "require": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "mcamara/laravel-localization": "*",
         "rinvex/countries": "^9.1",
         "spatie/laravel-sluggable": "*"
     },
 =======
+=======
+>>>>>>> c010b2b8 (.)
         "mcamara/laravel-localization": "^2.2",
         "spatie/laravel-sluggable": "*"
     },
     "require-dev": {},
+<<<<<<< HEAD
 >>>>>>> dc312f89 (.)
+=======
+>>>>>>> c010b2b8 (.)
     "repositories": [
         {
             "type": "path",
@@ -69,7 +75,11 @@
     "minimum-stability": "dev",
     "prefer-stable": true
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> dc312f89 (.)
+=======
+}
+>>>>>>> c010b2b8 (.)

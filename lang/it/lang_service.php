@@ -5,6 +5,7 @@ declare(strict_types=1);
 return [
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'language' => [
             'label' => 'Lingua',
             'placeholder' => 'Seleziona la lingua',
@@ -97,6 +98,8 @@ return [
         'description' => 'Gestisci le traduzioni e le lingue disponibili nel sistema',
     ],
 =======
+=======
+>>>>>>> c010b2b8 (.)
         'created_at' => [
             'label' => 'Data di creazione',
             'placeholder' => 'Seleziona data',
@@ -354,5 +357,8 @@ return [
             'tooltip' => 'Scarica un file di esempio',
         ],
     ],
+<<<<<<< HEAD
 >>>>>>> dc312f89 (.)
+=======
+>>>>>>> c010b2b8 (.)
 ];

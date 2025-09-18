@@ -1,12 +1,15 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 
 
 =======
 >>>>>>> dc312f89 (.)
+=======
+>>>>>>> c010b2b8 (.)
 return [
     'fields' => [
         'stabilimento' => [

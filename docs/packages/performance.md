@@ -87,6 +87,7 @@ Route::middleware([
 - [Localizzazione](localization.md)
 - [Traduzioni](translations.md) 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Versione HEAD
 
 
@@ -108,3 +109,5 @@ Route::middleware([
 
 =======
 >>>>>>> dc312f89 (.)
+=======
+>>>>>>> c010b2b8 (.)

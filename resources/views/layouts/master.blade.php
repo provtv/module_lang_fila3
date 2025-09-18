@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 TYPE html>
 =======
 <!DOCTYPE html>
 >>>>>>> dc312f89 (.)
+=======
+<!DOCTYPE html>
+>>>>>>> c010b2b8 (.)
 <html lang="en">
 
 <head>

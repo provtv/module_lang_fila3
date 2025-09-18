@@ -18,9 +18,13 @@ use Illuminate\View\View;
 use Livewire\Component;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Webmozart\Assert\Assert;
 >>>>>>> dc312f89 (.)
+=======
+use Webmozart\Assert\Assert;
+>>>>>>> c010b2b8 (.)
 
 // Route::get('{path}', RedirectToPreferredLanguage::class)
 // ->where('path', '^(?!(en|de)).*');
@@ -45,6 +49,7 @@ class Switcher extends Component
             if (false !== $url) {
                 // Verifichiamo che $url sia una stringa o lo convertiamo in modo sicuro
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if (! is_string($url)) {
                     // Se non è una stringa, utilizziamo una URL di fallback
                     $url = '/'.$key;
@@ -53,6 +58,11 @@ class Switcher extends Component
                     // Se non è una stringa, utilizziamo una URL di fallback
                     $url = '/' . $key;
 >>>>>>> dc312f89 (.)
+=======
+                if (!is_string($url)) {
+                    // Se non è una stringa, utilizziamo una URL di fallback
+                    $url = '/' . $key;
+>>>>>>> c010b2b8 (.)
                 } else {
                     $url = Str::of($url)->replace(url(''), '')->toString();
                 }

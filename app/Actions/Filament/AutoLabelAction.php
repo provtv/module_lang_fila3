@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Lang\Actions\Filament;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use ReflectionClass;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
@@ -22,6 +23,8 @@ use Filament\Forms\Components\Section as FormsSection;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Illuminate\Support\HtmlString;
 =======
+=======
+>>>>>>> c010b2b8 (.)
 use Filament\Actions\Action;
 use Filament\Forms\Components\Field;
 use Filament\Forms\Components\Wizard\Step;
@@ -34,7 +37,10 @@ use Modules\Lang\Actions\SaveTransAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
+<<<<<<< HEAD
 >>>>>>> dc312f89 (.)
+=======
+>>>>>>> c010b2b8 (.)
 
 class AutoLabelAction
 {
@@ -44,6 +50,7 @@ class AutoLabelAction
      * Undocumented function.
      * return number of input added.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @param Field|BaseFilter|Column|Step|Action|TableAction|FormsSection $component
      *
@@ -87,6 +94,8 @@ class AutoLabelAction
                 throw new \Exception('No object class found');
             }
 =======
+=======
+>>>>>>> c010b2b8 (.)
      * @param Field|BaseFilter|Column|Step|Action|TableAction $component
      *
      * @return Field|BaseFilter|Column|Step|Action|TableAction
@@ -107,12 +116,16 @@ class AutoLabelAction
             $object_class = $class['object']::class;
 
             // Assert::string($class = Arr::get($backtrace, '5.class'));
+<<<<<<< HEAD
 >>>>>>> dc312f89 (.)
+=======
+>>>>>>> c010b2b8 (.)
             $trans_key = app(GetTransKeyAction::class)->execute($object_class);
         } else {
             $trans_key = 'lang::txt';
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         $label_tkey = null;
         $val = 'no-set-val';
@@ -135,15 +148,21 @@ class AutoLabelAction
         }
         if($label_tkey == null && method_exists($component,'getName')){
 =======
+=======
+>>>>>>> c010b2b8 (.)
         if ($component instanceof Step) {
             Assert::string($val = $component->getLabel());
             $label_tkey = $trans_key.'.steps.'.$val.'';
         } else {
+<<<<<<< HEAD
 >>>>>>> dc312f89 (.)
+=======
+>>>>>>> c010b2b8 (.)
             Assert::string($val = $component->getName());
             $label_tkey = $trans_key.'.fields.'.$val.'';
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         if ($component instanceof Action ) {
             Assert::string($val = $component->getName());
@@ -220,6 +239,8 @@ class AutoLabelAction
         }
         if (!is_string($label)) {
 =======
+=======
+>>>>>>> c010b2b8 (.)
         if ($component instanceof Action) {
             $label_tkey = $trans_key.'.actions.'.$val.'';
         }
@@ -243,7 +264,10 @@ class AutoLabelAction
                 $component->tooltip($label);
             }
         } else {
+<<<<<<< HEAD
 >>>>>>> dc312f89 (.)
+=======
+>>>>>>> c010b2b8 (.)
             $component->label('FIX:'.$label_key);
         }
 

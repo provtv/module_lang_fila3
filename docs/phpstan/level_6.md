@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -10,6 +11,8 @@
 
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
+=======
+>>>>>>> c010b2b8 (.)
 # Rapporto PHPStan Livello 6 per il modulo Lang
 
 Data analisi: 2025-04-15 22:02:14
@@ -44,6 +47,7 @@ Trovati 2 errori al livello 6.
 - [Tipi in PHP](https://www.php.net/manual/en/language.types.declarations.php)
 - [PSR-12: Standard di codifica](https://www.php-fig.org/psr/psr-12/)
 <<<<<<< HEAD
+<<<<<<< HEAD
 aurmich/dev
 =======
 <<<<<<< HEAD
@@ -55,3 +59,5 @@ aurmich/dev
 aurmich/dev
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
+=======
+>>>>>>> c010b2b8 (.)

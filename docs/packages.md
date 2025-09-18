@@ -56,6 +56,7 @@
 - [SEO](packages/seo.md)
 - [Performance](packages/performance.md) 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Versione HEAD
 
 
@@ -78,3 +79,5 @@
 
 =======
 >>>>>>> dc312f89 (.)
+=======
+>>>>>>> c010b2b8 (.)

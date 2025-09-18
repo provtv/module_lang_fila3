@@ -91,6 +91,7 @@ echo $post->getTranslation('title', 'it'); // Ciao Mondo
 - [Localizzazione](localization.md)
 - [Performance](performance.md) 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Versione HEAD
 
 
@@ -121,3 +122,5 @@ echo $post->getTranslation('title', 'it'); // Ciao Mondo
 
 =======
 >>>>>>> dc312f89 (.)
+=======
+>>>>>>> c010b2b8 (.)

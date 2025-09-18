@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [{"name":"lang.change","class":"Lang\\Change","module":null,"path":null,"ns":"Modules\\Lang\\Http\\Livewire\\Lang\\Change"},{"name":"lang.switcher","class":"Lang\\Switcher","module":null,"path":null,"ns":"Modules\\Lang\\Http\\Livewire\\Lang\\Switcher"}]
 =======
+=======
+>>>>>>> c010b2b8 (.)
 [
     {
         "name": "lang.change",
@@ -16,5 +19,9 @@
         "path": null,
         "ns": "Modules\\Lang\\Http\\Livewire\\Lang\\Switcher"
     }
+<<<<<<< HEAD
 ]
 >>>>>>> dc312f89 (.)
+=======
+]
+>>>>>>> c010b2b8 (.)

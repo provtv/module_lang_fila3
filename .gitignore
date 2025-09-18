@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ==============================================
 # LARAXOT MODULE LANG - .GITIGNORE
 # ==============================================
@@ -149,6 +150,8 @@ test_translations.sql
 # END OF LANG .GITIGNORE
 # ==============================================
 =======
+=======
+>>>>>>> c010b2b8 (.)
 /vendor/
 vendor/
 node_modules/
@@ -214,4 +217,7 @@ cache/
 
 *:Zone.Identifier
 .php-cs-fixer.cache
+<<<<<<< HEAD
 >>>>>>> dc312f89 (.)
+=======
+>>>>>>> c010b2b8 (.)

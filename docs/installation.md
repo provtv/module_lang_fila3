@@ -16,6 +16,7 @@ composer require laraxot/module_lang
 
 php artisan module_lang:install
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Versione HEAD
 
 ```
@@ -38,3 +39,6 @@ php artisan module_lang:install
 =======
 ```
 >>>>>>> dc312f89 (.)
+=======
+```
+>>>>>>> c010b2b8 (.)

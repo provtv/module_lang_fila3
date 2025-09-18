@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [{"name":"flag","class":"Flag","module":null,"path":null,"ns":"Modules\\Lang\\View\\Components\\Flag"}]
 =======
 <<<<<<< HEAD
@@ -8,6 +9,8 @@
 =======
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
+=======
+>>>>>>> c010b2b8 (.)
 [
     {
         "name": "flag",
@@ -16,6 +19,7 @@
         "path": null,
         "ns": "Modules\\Lang\\View\\Components\\Flag"
     }
+<<<<<<< HEAD
 ]
 <<<<<<< HEAD
 =======
@@ -27,3 +31,6 @@
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
 >>>>>>> dc312f89 (.)
+=======
+]
+>>>>>>> c010b2b8 (.)

@@ -6,6 +6,7 @@ namespace Modules\Lang\Actions;
 
 use Illuminate\Support\Str;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
@@ -14,12 +15,18 @@ use Nwidart\Modules\Facades\Module;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 >>>>>>> dc312f89 (.)
+=======
+use Nwidart\Modules\Facades\Module;
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+>>>>>>> c010b2b8 (.)
 
 class GetTransPathAction
 {
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * Restituisce il path completo del file di traduzione dato un key.
      */
@@ -38,6 +45,8 @@ class GetTransPathAction
         $file_name = $piece[0] ?? '';
         Assert::string($file_name, 'Il nome del file deve essere una stringa');
 =======
+=======
+>>>>>>> c010b2b8 (.)
      * Undocumented function.
      */
     public function execute(string $key): string
@@ -66,7 +75,10 @@ class GetTransPathAction
         $file_name = $piece[0] ?? '';
         Assert::string($file_name, 'Il nome del file deve essere una stringa');
 
+<<<<<<< HEAD
 >>>>>>> dc312f89 (.)
+=======
+>>>>>>> c010b2b8 (.)
         return $lang_path.'/'.$lang.'/'.$file_name.'.php';
     }
 }

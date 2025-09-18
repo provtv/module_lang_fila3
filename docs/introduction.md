@@ -19,6 +19,7 @@ In questo modo, quando l'applicazione viene utilizzata in Italia, verrà visuali
 quando viene utilizzata in Francia, verrà visualizzato il testo tradotto in francese, e così via.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Versione HEAD
 
 
@@ -38,3 +39,5 @@ quando viene utilizzata in Francia, verrà visualizzato il testo tradotto in fra
 
 =======
 >>>>>>> dc312f89 (.)
+=======
+>>>>>>> c010b2b8 (.)

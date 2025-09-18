@@ -6,6 +6,7 @@
 - **Namespace**: `Modules\Lang`
 - **Repository**: https://github.com/laraxot/module_lang_fila3.git
 
+<<<<<<< HEAD
 ## Collegamenti ai Moduli
 
 ### Moduli con Traduzioni
@@ -26,6 +27,8 @@
 ### Regole Generali
 - [Regole Traduzioni](../../Xot/docs/translations.md) - Documentazione base sulle traduzioni
 
+=======
+>>>>>>> c010b2b8 (.)
 ## Service Providers
 1. `Modules\Lang\Providers\LangServiceProvider`
 2. `Modules\Lang\Providers\Filament\AdminPanelProvider`
@@ -138,6 +141,7 @@ composer format        # Formatta il codice
 - Tutorial e esempi
 
 ## Changelog
+<<<<<<< HEAD
 Le modifiche vengono tracciate nel repository GitHub.
 
 ## Nuove Best Practices
@@ -286,3 +290,6 @@ public function testTranslations()
 // Accesso alle traduzioni
 $translation = Lang::get('patient.registration.label');
 ``` 
+=======
+Le modifiche vengono tracciate nel repository GitHub. 
+>>>>>>> c010b2b8 (.)

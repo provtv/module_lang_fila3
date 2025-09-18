@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 # Dependencies and packages
 /node_modules/
@@ -29,6 +30,8 @@ docs/phpstan/
 # Other
 -e
 =======
+=======
+>>>>>>> c010b2b8 (.)
 /build_*/
 /node_modules/
 /vendor/
@@ -39,4 +42,7 @@ npm-debug.log
 *.phar
 *.lock
 package-lock.json
+<<<<<<< HEAD
 >>>>>>> dc312f89 (.)
+=======
+>>>>>>> c010b2b8 (.)
