@@ -33,7 +33,11 @@ class AutoLabelAction
      *
      * @return Field|BaseFilter|Column|Step|Action|TableAction|FormsSection
      */
+<<<<<<< HEAD
     public function execute() {
+=======
+    public function execute($component) {
+>>>>>>> e3b7fe2 (.)
         $backtrace = debug_backtrace();
         $backtrace_slice = array_slice($backtrace, 2);
         $class = Arr::first($backtrace_slice, function ($item) use($component){
