@@ -4,18 +4,26 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Rector\CodeQuality\Rector\Class_\InlineConstructorDefaultToPropertyRector;
 =======
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+use Rector\CodeQuality\Rector\Class_\InlineConstructorDefaultToPropertyRector;
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 use Rector\Config\RectorConfig;
 use Rector\PHPUnit\Set\PHPUnitLevelSetList;
 use Rector\Set\ValueObject\LevelSetList;
 use Rector\Set\ValueObject\SetList;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 use RectorLaravel\Rector\MethodCall\RedirectRouteToToRouteHelperRector;
 use RectorLaravel\Set\LaravelSetList;
 
 return static function (RectorConfig $rectorConfig): void {
+<<<<<<< HEAD
     $rectorConfig->paths([
         __DIR__.'/Modules',
         __DIR__.'/app',
@@ -87,22 +95,37 @@ return static function (RectorConfig $rectorConfig): void {
             __DIR__.'/resources',
             __DIR__.'/routes',
             __DIR__.'/tests',
+=======
+    $rectorConfig->paths(
+        [
+            __DIR__,
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
         ]
     );
 
     $rectorConfig->skip(
         [
+<<<<<<< HEAD
             __DIR__.'/Modules/*/docs',
             __DIR__.'/Modules/*/vendor',
             '*/docs',
             '*/vendor',
             './vendor/',
+=======
+            './vendor/',
+            '*/docs',
+            '*/vendor',
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
         ]
     );
 
     // register a single rule
     // $rectorConfig->rule(InlineConstructorDefaultToPropertyRector::class);
+<<<<<<< HEAD
     // $rectorConfig->rule(RedirectRouteToToRouteHelperRector::class);
+=======
+    $rectorConfig->rule(RedirectRouteToToRouteHelperRector::class);
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 
     // define sets of rules
     $rectorConfig->sets(
@@ -124,4 +147,7 @@ return static function (RectorConfig $rectorConfig): void {
 
     $rectorConfig->importNames();
 };
+<<<<<<< HEAD
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)

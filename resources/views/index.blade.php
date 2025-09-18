@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 nds('lang::layouts.master')
 =======
 @extends('lang::layouts.master')
@@ -15,11 +16,15 @@ nds('lang::layouts.master')
 =======
 @extends('xot::layouts.app')
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+@extends('job::layouts.master')
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 
 @section('content')
     <h1>Hello World</h1>
 
     <p>
+<<<<<<< HEAD
 <<<<<<< HEAD
         This view is loaded from module: {!! config('lang.name') !!}
     </p>
@@ -29,3 +34,8 @@ nds('lang::layouts.master')
     </p>
 @stop
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+        This view is loaded from module: {!! config('job.name') !!}
+    </p>
+@endsection
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Performance
 
 ## Pacchetti Utilizzati
@@ -195,3 +196,6 @@ $package->state->transitionTo(Archived::class);
 - [Debug](debug.md)
 - [Panoramica](../packages.md) 
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+ 
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 []
 =======
 [
@@ -137,3 +138,35 @@
     }
 ]
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+[
+    {
+        "name": "php-unit-test-job-command",
+        "class": "PhpUnitTestJobCommand",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\Job\\Console\\Commands\\PhpUnitTestJobCommand"
+    },
+    {
+        "name": "schedule-clear-cache-command",
+        "class": "ScheduleClearCacheCommand",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\Job\\Console\\Commands\\ScheduleClearCacheCommand"
+    },
+    {
+        "name": "test-job-command",
+        "class": "TestJobCommand",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\Job\\Console\\Commands\\TestJobCommand"
+    },
+    {
+        "name": "worker-check",
+        "class": "WorkerCheck",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\Job\\Console\\Commands\\WorkerCheck"
+    }
+]
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)

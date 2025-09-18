@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -104,3 +105,10 @@ aurmich/dev
 >>>>>>> 499a5da9 (.)
 =======
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+# Rapporto PHPStan Livello 1 per il modulo Job
+
+Data analisi: 2025-04-15 22:02:51
+
+🎉 **Congratulazioni!** Nessun errore trovato a questo livello.
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)

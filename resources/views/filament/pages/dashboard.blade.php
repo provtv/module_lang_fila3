@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 lament::page>
 =======
 <x-filament::page>
@@ -25,3 +26,12 @@ lament::page>
         --}}
 </x-filament-panels::page>
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+<x-filament::page>
+    {{--
+    <img src="{{ ui::asset('ewall::img/logo.png') }}" />
+
+    <img src="{{ $ui->asset('ewall::img/logo.png') }}" />
+    --}}
+</x-filament::page>
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)

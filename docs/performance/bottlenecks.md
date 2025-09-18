@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
@@ -210,6 +211,8 @@ public function exportData()
 ```
 <<<<<<< HEAD
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 # Job Module Performance Bottlenecks
 
 ## Queue Management
@@ -239,6 +242,7 @@ protected function balanceQueues() {
         ->sortByDesc('load')
         ->each(fn($queue) => 
             $this->redistributeJobs($queue)
+<<<<<<< HEAD
 
 # Media Module Performance Bottlenecks
 
@@ -304,12 +308,17 @@ protected function findPersonalData($user) {
         ->through(fn($record) => 
             $this->extractPersonalData($record)
  ecd8d46956 (Squashed 'laravel/Modules/Gdpr/' content from commit d30cea3b2)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
         );
 }
 ```
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 ### 2. Job Processing
 File: `app/Services/JobProcessingService.php`
 
@@ -318,6 +327,7 @@ File: `app/Services/JobProcessingService.php`
 - Memoria eccessiva
 - Retry logic non ottimizzata
 
+<<<<<<< HEAD
 ### 2. Image Processing
 File: `app/Services/ImageProcessingService.php`
 
@@ -331,6 +341,11 @@ File: `app/Services/ImageProcessingService.php`
 ```php
 // 1. Processing ottimizzato
 
+=======
+**Soluzioni:**
+```php
+// 1. Processing ottimizzato
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 class BatchJobProcessor implements ShouldQueue {
     public function handle() {
         return $this->jobs
@@ -410,6 +425,7 @@ protected function cleanupOldJobs() {
         ->each(fn($job) => 
             $this->removeJob($job)
         );
+<<<<<<< HEAD
 
 public function processImage($image) {
     return Cache::remember(
@@ -780,6 +796,9 @@ protected function loadTranslations($path) {
 =======
  c1120baae0 (Squashed 'laravel/Modules/Lang/' content from commit 693742e073)
 >>>>>>> 688d0704 (first)
+=======
+}
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 ```
 
 ## Monitoring Recommendations
@@ -787,10 +806,13 @@ protected function loadTranslations($path) {
 ### 1. Performance Metrics
 Monitorare:
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 - Queue length
 - Processing time
 - Failure rate
@@ -810,6 +832,7 @@ Implementare:
 - Performance profiling
 - Queue monitoring
 
+<<<<<<< HEAD
 - Tempo di upload
 - Tempo di processing
 - Utilizzo storage
@@ -873,21 +896,27 @@ Implementare:
  c1120baae0 (Squashed 'laravel/Modules/Lang/' content from commit 693742e073)
 >>>>>>> 688d0704 (first)
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 ## Immediate Actions
 
 1. **Implementare Caching:**
    ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
    // Cache per job status
    public function getJobStatus($id) {
        return Cache::tags(['jobs'])
            ->remember("status_{$id}", 
                now()->addMinutes(5),
                fn() => $this->fetchStatus($id)
+<<<<<<< HEAD
 
    // Cache per file frequenti
    public function getMedia($id) {
@@ -916,15 +945,20 @@ Implementare:
 =======
  c1120baae0 (Squashed 'laravel/Modules/Lang/' content from commit 693742e073)
 >>>>>>> 688d0704 (first)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
            );
    }
    ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 2. **Ottimizzare Code:**
    ```php
    // Code ottimizzate
@@ -932,6 +966,7 @@ Implementare:
        return $this->queues
            ->each(fn($queue) => 
                $this->balanceQueue($queue)
+<<<<<<< HEAD
 
 2. **Ottimizzare Storage:**
    ```php
@@ -969,12 +1004,16 @@ Implementare:
 =======
  c1120baae0 (Squashed 'laravel/Modules/Lang/' content from commit 693742e073)
 >>>>>>> 688d0704 (first)
+=======
+           );
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
    }
    ```
 
 3. **Gestione Memoria:**
    ```php
    // Gestione efficiente memoria
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -995,11 +1034,18 @@ Implementare:
            yield from $this->getDataIterator();
        })->chunk(1000)
  ecd8d46956 (Squashed 'laravel/Modules/Gdpr/' content from commit d30cea3b2)
+=======
+   public function processJobBatch() {
+       return LazyCollection::make(function () {
+           yield from $this->getPendingJobs();
+       })->chunk(100)
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
          ->each(fn($chunk) => 
              $this->processChunk($chunk)
          );
    }
    ```
+<<<<<<< HEAD
 
 
  90bf7d5b85 (Squashed 'laravel/Modules/Job/' content from commit d3ea5c83e)
@@ -1052,3 +1098,5 @@ Implementare:
 >>>>>>> 688d0704 (first)
 =======
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)

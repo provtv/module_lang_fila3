@@ -22,10 +22,14 @@ jobs:
       run: ./vendor/bin/jigsaw build production
     - name: Create CNAME File
 <<<<<<< HEAD
+<<<<<<< HEAD
       run: echo "privacyfed.github.io/doc_extrafield" >> build_production/CNAME
 =======
       run: echo "laraxot.github.io/doc_extrafield" >> build_production/CNAME
 >>>>>>> 688d0704 (first)
+=======
+      run: echo "laraxot.github.io/doc_extrafield" >> build_production/CNAME
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
     - name: Stage Files
       run: git add -f build_production
     - name: Commit files

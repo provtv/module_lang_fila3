@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -75,6 +76,21 @@ Trovati 4 errori al livello 3.
 
 #### Linea 48: Syntax error, unexpected '}' on line 48
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+# Rapporto PHPStan Livello 3 per il modulo Job
+
+Data analisi: 2025-04-15 22:03:16
+
+## Riepilogo
+
+Trovati 1 errori al livello 3.
+
+## Errori e suggerimenti
+
+### File: `/var/www/html/saluteora/laravel/Modules/Job/app/Models/Task.php`
+
+#### Linea 86: PHPDoc tag @property-read for property Modules\Job\Models\Task::$creator contains unknown class Modules\Broker\Models\Profile.
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 
 **Suggerimento generale**: Rivedi il codice per assicurarti che:
 - Tutte le classi/interfacce utilizzate siano importate correttamente
@@ -87,6 +103,7 @@ Trovati 4 errori al livello 3.
 - [Documentazione PHPStan](https://phpstan.org/user-guide/getting-started)
 - [Tipi in PHP](https://www.php.net/manual/en/language.types.declarations.php)
 - [PSR-12: Standard di codifica](https://www.php-fig.org/psr/psr-12/)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -108,3 +125,5 @@ aurmich/dev
 >>>>>>> 499a5da9 (.)
 =======
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)

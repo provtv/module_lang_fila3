@@ -1,6 +1,7 @@
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	"editor.formatOnSave": false,
 <<<<<<< HEAD
@@ -51,6 +52,8 @@
 >>>>>>> 688d0704 (first)
 =======
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 	"editor.formatOnType": true,
 	"php-cs-fixer.onsave": true,
 	"php-cs-fixer.formatHtml": true,
@@ -59,8 +62,11 @@
 	"php-cs-fixer.executablePathWindows": "php-cs-fixer.bat",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 	"vscode-php-cs-fixer.allowRisky": true,
 	"phpmd.enabled": false,
 	"phpmd.validate.rulesets": "cleancode,codesize,controversial,design,naming,unusedcode",
@@ -94,6 +100,7 @@
 	"[vue]": {
 		"editor.defaultFormatter": "octref.vetur"
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 =======
@@ -144,3 +151,6 @@
 =======
 }
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+}
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)

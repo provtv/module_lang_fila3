@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo Lang
 
 Data: 2025-04-23 19:09:56
@@ -548,3 +549,46 @@ Modules/Xot/
    - Seguire le convenzioni di Laravel per la struttura delle directory
    - Utilizzare i namespace appropriati che riflettono la struttura delle directory 
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+# Struttura del Modulo Job
+
+## Panoramica
+Il modulo Job è responsabile della gestione dei processi in background e delle code nell'applicazione.
+
+## Struttura delle Directory
+
+```
+Job/
+├── Config/
+│   └── config.php           # Configurazione base del modulo
+├── Http/
+│   └── Controllers/
+│       └── JobController.php # Controller principale per la gestione dei job
+├── Providers/
+│   ├── JobServiceProvider.php    # Service provider principale del modulo
+│   └── RouteServiceProvider.php   # Gestione delle route del modulo
+└── Routes/
+    ├── api.php              # Route API
+    └── web.php             # Route web
+```
+
+## Service Providers
+
+### JobServiceProvider
+Il `JobServiceProvider` è responsabile di:
+- Registrazione delle configurazioni
+- Registrazione delle viste
+- Caricamento delle migrazioni
+- Registrazione del RouteServiceProvider
+
+### RouteServiceProvider
+Il `RouteServiceProvider` gestisce:
+- Route web sotto il prefisso 'job'
+- Route API sotto il prefisso 'api/v1'
+- Namespace dei controller `Modules\Job\Http\Controllers`
+
+## Collegamenti Bidirezionali
+- [Documentazione Generale dei Moduli](/docs/modules.md)
+- [Configurazione Job](/docs/module_job.md)
+- [Best Practices PHPStan](/docs/phpstan/PHPSTAN_LEVEL10_LINEE_GUIDA.md) 
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)

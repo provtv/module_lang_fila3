@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
@@ -220,6 +221,8 @@ class PerformanceMonitor {
         return $response;
 <<<<<<< HEAD
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 # Soluzioni Tecniche - Modulo Job
 
 ## Problemi Identificati e Soluzioni
@@ -266,13 +269,17 @@ class ProcessJobAction {
         dispatch(new ProcessLowPriorityJob($job))
             ->onQueue('low')
             ->delay(now()->addMinutes(5));
+<<<<<<< HEAD
  90bf7d5b85 (Squashed 'laravel/Modules/Job/' content from commit d3ea5c83e)
 =======
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
     }
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -290,6 +297,8 @@ class QueryLogServiceProvider extends ServiceProvider {
                     'bindings' => $query->bindings
 <<<<<<< HEAD
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 ### 2. Monitoraggio Job (`Modules/Job/Services/JobMonitoringService.php`)
 ```php
 // Problema: Monitoraggio job non ottimizzato
@@ -377,6 +386,7 @@ class RetryManager {
             'attempt' => $job->attempts,
             'delay' => $delay
         ]);
+<<<<<<< HEAD
 
 ### 3. Log Accessi (`Modules/Gdpr/Services/AccessLogService.php`)
 ```php
@@ -408,19 +418,25 @@ class ProcessAccessLog implements ShouldQueue {
     public function handle() {
         AccessLog::create($this->logData);
  ecd8d46956 (Squashed 'laravel/Modules/Gdpr/' content from commit d30cea3b2)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
     }
 }
 ```
 
 ## Ottimizzazioni Database
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 ### 1. Indici e Struttura
 ```sql
 -- In: database/migrations/optimize_job_tables.php
 CREATE INDEX jobs_status_type_idx ON jobs (status, type, created_at);
 CREATE INDEX job_logs_job_id_idx ON job_logs (job_id, created_at);
 CREATE INDEX failed_jobs_queue_idx ON failed_jobs (queue) WHERE queue = 'default';
+<<<<<<< HEAD
 
 ### 1. Indici Ottimizzati
 ```sql
@@ -429,11 +445,16 @@ CREATE INDEX consent_logs_user_idx ON consent_logs (user_id, created_at);
 CREATE INDEX access_logs_user_idx ON access_logs (user_id, accessed_at);
 CREATE INDEX data_deletion_requests_status_idx ON data_deletion_requests (status, created_at);
  ecd8d46956 (Squashed 'laravel/Modules/Gdpr/' content from commit d30cea3b2)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 ```
 
 ### 2. Query Optimization
 ```php
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 // In: Modules/Job/Models/Job.php
 class Job extends Model {
     public function scopeActive($query) {
@@ -447,6 +468,7 @@ class Job extends Model {
         return $query->where('status', 'failed')
                     ->with('failureLog')
                     ->orderBy('failed_at', 'desc');
+<<<<<<< HEAD
 
 // In: Modules/Gdpr/Traits/HasGdprLogs.php
 trait HasGdprLogs {
@@ -464,6 +486,8 @@ trait HasGdprLogs {
               ->where('created_at', '<=', now()->subDays(30));
         });
  ecd8d46956 (Squashed 'laravel/Modules/Gdpr/' content from commit d30cea3b2)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
     }
 }
 ```
@@ -472,7 +496,10 @@ trait HasGdprLogs {
 
 ### 1. Cache Configuration
 ```php
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 // In: Modules/Job/Config/cache.php
 return [
     'ttl' => [
@@ -484,6 +511,7 @@ return [
         'jobs',
         'stats',
         'config'
+<<<<<<< HEAD
 
 // In: Modules/Gdpr/Config/cache.php
 return [
@@ -497,13 +525,18 @@ return [
         'policies',
         'logs'
  ecd8d46956 (Squashed 'laravel/Modules/Gdpr/' content from commit d30cea3b2)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
     ]
 ];
 ```
 
 ### 2. Cache Implementation
 ```php
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 // In: Modules/Job/Services/JobCacheService.php
 class JobCacheService {
     public function getJobStatus(string $jobId): ?array {
@@ -545,6 +578,7 @@ class QueueRateLimitService {
     public function trackJobProcessing(string $queue): void {
         Redis::incr("queue:{$queue}:processed");
         Redis::expire("queue:{$queue}:processed", 3600);
+<<<<<<< HEAD
 
 // In: Modules/Gdpr/Services/ConsentCacheService.php
 class ConsentCacheService {
@@ -560,13 +594,18 @@ class ConsentCacheService {
     public function invalidateUserConsents(User $user): void {
         Cache::tags(['consents', "user_{$user->id}"])->flush();
  ecd8d46956 (Squashed 'laravel/Modules/Gdpr/' content from commit d30cea3b2)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
     }
 }
 ```
 
 ## Monitoring
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 ### 1. Queue Monitoring
 ```php
 // In: Modules/Job/Monitoring/QueueMonitor.php
@@ -583,6 +622,7 @@ class QueueMonitor {
                 Log::warning("Queue size threshold exceeded", [
                     'queue' => $queue,
                     'size' => $size
+<<<<<<< HEAD
  90bf7d5b85 (Squashed 'laravel/Modules/Job/' content from commit d3ea5c83e)
                 ]);
             }
@@ -613,10 +653,16 @@ class ComplianceMonitor {
             }
         });
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+                ]);
+            }
+        });
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
     }
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -668,6 +714,8 @@ class XotConfig {
         );
 <<<<<<< HEAD
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 ### 2. Job Health Check
 ```php
 // In: Modules/Job/Health/JobHealthCheck.php
@@ -690,6 +738,7 @@ class JobHealthCheck extends Check {
         }
         
         return Result::ok();
+<<<<<<< HEAD
  90bf7d5b85 (Squashed 'laravel/Modules/Job/' content from commit d3ea5c83e)
 
 ### 2. Audit Logging
@@ -706,12 +755,15 @@ class AuditService {
  ecd8d46956 (Squashed 'laravel/Modules/Gdpr/' content from commit d30cea3b2)
 =======
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
     }
 }
 ```
 
 ## Testing
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -729,6 +781,8 @@ class QueryBuilderTest extends TestCase {
         $this->assertQueryHasEagerLoading($query, ['posts']);
 <<<<<<< HEAD
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 ### 1. Job Processing Tests
 ```php
 // In: Modules/Job/Tests/Unit/ProcessJobTest.php
@@ -744,6 +798,7 @@ class ProcessJobTest extends TestCase {
         app(ProcessJobAction::class)->execute($job);
         
         Queue::assertPushedOn('high', ProcessHighPriorityJob::class);
+<<<<<<< HEAD
  90bf7d5b85 (Squashed 'laravel/Modules/Job/' content from commit d3ea5c83e)
 
 ### 1. Compliance Tests
@@ -767,10 +822,13 @@ class ConsentComplianceTest extends TestCase {
  ecd8d46956 (Squashed 'laravel/Modules/Gdpr/' content from commit d30cea3b2)
 =======
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
     }
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -789,6 +847,8 @@ class CacheTest extends TestCase {
         $this->assertLessThan(0.1, $duration);
 <<<<<<< HEAD
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 ### 2. Retry Tests
 ```php
 // In: Modules/Job/Tests/Feature/RetryTest.php
@@ -804,6 +864,7 @@ class RetryTest extends TestCase {
             'id' => $job->id,
             'attempts' => 1
         ]);
+<<<<<<< HEAD
  90bf7d5b85 (Squashed 'laravel/Modules/Job/' content from commit d3ea5c83e)
 
 ### 2. Anonymization Tests
@@ -824,12 +885,15 @@ class AnonymizationTest extends TestCase {
  ecd8d46956 (Squashed 'laravel/Modules/Gdpr/' content from commit d30cea3b2)
 =======
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
     }
 }
 ```
 
 ## Note di Implementazione
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -842,6 +906,8 @@ class AnonymizationTest extends TestCase {
 <<<<<<< HEAD
 5. Mantenere compatibilità con le versioni precedenti 
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 1. Priorità di Intervento:
    - Ottimizzazione gestione code
    - Implementazione monitoraggio avanzato
@@ -858,6 +924,7 @@ class AnonymizationTest extends TestCase {
    - Pulizia job vecchi
    - Ottimizzazione indici
    - Review configurazioni
+<<<<<<< HEAD
    - Aggiornamento strategie retry 
  90bf7d5b85 (Squashed 'laravel/Modules/Job/' content from commit d3ea5c83e)
 
@@ -882,3 +949,6 @@ class AnonymizationTest extends TestCase {
 =======
 5. Mantenere compatibilità con le versioni precedenti 
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+   - Aggiornamento strategie retry 
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)

@@ -1,6 +1,7 @@
 <?php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 declare(strict_types=1);
@@ -8,6 +9,8 @@ declare(strict_types=1);
 >>>>>>> 688d0704 (first)
 =======
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 $finder = PhpCsFixer\Finder::create()
     ->notPath('bootstrap/cache')
     ->notPath('storage')
@@ -18,13 +21,17 @@ $finder = PhpCsFixer\Finder::create()
     ->ignoreDotFiles(true)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
     ->ignoreVCS(true)
 ;
 
 return PhpCsFixer\Config::create()
     ->setRules(array(
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     ->ignoreVCS(true);
@@ -34,6 +41,8 @@ return PhpCsFixer\Config::create()
 >>>>>>> 688d0704 (first)
 =======
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
         '@Symfony' => true,
         'array_indentation' => true,
         'function_typehint_space' => true,
@@ -48,6 +57,7 @@ return PhpCsFixer\Config::create()
         'php_unit_construct' => false,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'braces'=>[
             'position_after_functions_and_oop_constructs'=>'same',
 =======
@@ -58,11 +68,16 @@ return PhpCsFixer\Config::create()
         'braces'=>[
             'position_after_functions_and_oop_constructs'=>'same',
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+        'braces'=>[
+            'position_after_functions_and_oop_constructs'=>'same',
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
         ],
         'function_declaration' => true,
         'blank_line_after_namespace' => true,
         'class_definition' => true,
         'elseif' => true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     ))
@@ -77,3 +92,8 @@ return PhpCsFixer\Config::create()
     ->setFinder($finder)
 ;
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+    ))
+    ->setFinder($finder)
+;
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)

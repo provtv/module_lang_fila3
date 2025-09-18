@@ -31,6 +31,7 @@ jobs:
 
     - name: CNAME
 <<<<<<< HEAD
+<<<<<<< HEAD
       run: cd docs && echo "laraxot.github.io/module_lang" > ./build_production/CNAME
 
     - name: gh-pages
@@ -41,6 +42,12 @@ jobs:
     - name: gh-pages
       uses: JamesIves/github-pages-deploy-action@latest
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+      run: cd docs && echo "laraxot.github.io/module_job" > ./build_production/CNAME
+
+    - name: gh-pages
+      uses: JamesIves/github-pages-deploy-action@latest
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
       with:
         branch: gh-pages
         folder: ./docs/build_production

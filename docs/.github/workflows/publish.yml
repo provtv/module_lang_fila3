@@ -5,7 +5,11 @@ on:
     branches:
       - master
 
+<<<<<<< HEAD
 permissions: 
+=======
+permissions:
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
   contents: write
 
 jobs:
@@ -25,6 +29,7 @@ jobs:
 
     - name: Node
       run: npm install
+<<<<<<< HEAD
       
     - name: Production
       run: npm run prod
@@ -34,6 +39,17 @@ jobs:
 
     - name: gh-pages
       uses: JamesIves/github-pages-deploy-action@v4.4.2
+=======
+
+    - name: Production
+      run: npm run prod
+
+    - name: CNAME
+      run: echo "laraxot.github.io/doc_extrafield" > ./build_production/CNAME
+
+    - name: gh-pages
+      uses: JamesIves/github-pages-deploy-action@latest
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
       with:
         branch: gh-pages
         folder: build_production

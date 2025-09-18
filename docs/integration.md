@@ -2,20 +2,36 @@
 
 ## Documentazione Collegata
 
+<<<<<<< HEAD
 ### Laraxot
 - [Documentazione Laraxot](../docs/laraxot/)
 - [Migrazione Struttura](../docs/migrazione-struttura.md)
 - [Namespace Rules](../docs/namespace-rules.md)
+=======
+### Filament
+- [Risorse Filament](../docs/filament-risorse.md)
+- [Personalizzazioni Avanzate](../docs/filament-personalizzazioni-avanzate.md)
+- [Gestione Contenuti](../docs/gestione-contenuti-json.md)
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 
 ### Struttura e Convenzioni
 - [Namespace Convention](../docs/namespace-convention.md)
 - [Namespace Structure](../docs/namespace-structure.md)
+<<<<<<< HEAD
 - [Standard Codice](../docs/standard-codice.md)
 
 ### Implementazione
 - [Filament Risorse](../docs/filament-risorse.md)
 - [Personalizzazioni Avanzate](../docs/filament-personalizzazioni-avanzate.md)
 - [Traduzioni](../docs/traduzioni.md)
+=======
+- [Namespace Rules](../docs/namespace-rules.md)
+
+### Implementazione
+- [Standard Codice](../docs/standard-codice.md)
+- [Traduzioni](../docs/traduzioni.md)
+- [Componenti e Blocchi](../docs/componenti-blocchi-contenuto.md)
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 
 ## Best Practices
 

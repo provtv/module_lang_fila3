@@ -4,6 +4,12 @@ on:
   release:
     types: [released]
 
+<<<<<<< HEAD
+=======
+permissions:
+  contents: write
+
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -22,10 +28,14 @@ jobs:
 
       - name: Commit updated CHANGELOG
 <<<<<<< HEAD
+<<<<<<< HEAD
         uses: stefanzweifel/git-auto-commit-action@v4
 =======
         uses: stefanzweifel/git-auto-commit-action@latest
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+        uses: stefanzweifel/git-auto-commit-action@latest
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
         with:
           branch: main
           commit_message: Update CHANGELOG

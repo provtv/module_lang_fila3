@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Lang\Providers\Filament;
 
 <<<<<<< HEAD
@@ -16,10 +17,15 @@ use Filament\SpatieLaravelTranslatablePlugin;
 >>>>>>> c010b2b8 (.)
 =======
 >>>>>>> 499a5da9 (.)
+=======
+namespace Modules\Job\Providers\Filament;
+
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 class AdminPanelProvider extends XotBasePanelProvider
 {
+<<<<<<< HEAD
     protected string $module = 'Lang';
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -57,4 +63,7 @@ class AdminPanelProvider extends XotBasePanelProvider
 {
     protected string $module = 'Xot';
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+    protected string $module = 'Job';
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 }

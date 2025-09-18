@@ -1,2 +1,6 @@
 https://github.com/mooxphp/jobs/tree/main
+<<<<<<< HEAD
 https://github.com/aymanalhattami/filament-page-with-sidebar
+=======
+
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)

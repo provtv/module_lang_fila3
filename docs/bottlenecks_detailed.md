@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
@@ -14,6 +15,8 @@ Il modulo Xot è un modulo core che fornisce funzionalità base per l'intera app
 - Causa: Reflection e lookup ripetitivi
 
 <<<<<<< HEAD
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 # Analisi Dettagliata dei Colli di Bottiglia - Modulo Job
 
 ## Panoramica
@@ -23,6 +26,7 @@ Il modulo Job gestisce le code e i processi asincroni dell'applicazione. L'anali
 **Problema**: Gestione inefficiente delle code di lavoro
 - Impatto: Latenza nell'elaborazione dei job
 - Causa: Mancanza di prioritizzazione e code sovraccariche
+<<<<<<< HEAD
  90bf7d5b85 (Squashed 'laravel/Modules/Job/' content from commit d3ea5c83e)
 
 # Analisi Dettagliata dei Colli di Bottiglia - Modulo Media
@@ -84,11 +88,14 @@ final class ModelFactoryService
 **Problema**: Costruzione query inefficiente
 - Impatto: Performance degradate nelle operazioni database
 - Causa: Query builder non ottimizzato
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 
 **Soluzione Proposta**:
 ```php
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Xot\Services;
 
 use Illuminate\Database\Query\Builder;
@@ -130,6 +137,8 @@ final class QueryBuilderService
             ->all();
 <<<<<<< HEAD
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 namespace Modules\Job\Services;
 
 use Illuminate\Support\Facades\Queue;
@@ -172,6 +181,7 @@ final class QueueManagerService
             'low' => 300, // 5 minuti
             default => 60 // 1 minuto
         };
+<<<<<<< HEAD
  90bf7d5b85 (Squashed 'laravel/Modules/Job/' content from commit d3ea5c83e)
 
 namespace Modules\Media\Services;
@@ -224,10 +234,13 @@ final class ImageProcessingService
  38c1507055 (Squashed 'laravel/Modules/Media/' content from commit 4548be09a)
 =======
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
     }
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -239,10 +252,13 @@ final class ImageProcessingService
 - Causa: Mancanza di politiche di caching intelligenti
 
 <<<<<<< HEAD
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 ## 2. Monitoraggio Job
 **Problema**: Monitoraggio insufficiente dei job
 - Impatto: Difficoltà nel debugging e ottimizzazione
 - Causa: Mancanza di metriche e logging dettagliato
+<<<<<<< HEAD
  90bf7d5b85 (Squashed 'laravel/Modules/Job/' content from commit d3ea5c83e)
 
 ## 2. Gestione Cache Media
@@ -253,10 +269,14 @@ final class ImageProcessingService
 
 =======
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 **Soluzione Proposta**:
 ```php
 declare(strict_types=1);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -310,6 +330,8 @@ final class XotCacheService
         return $tags;
 <<<<<<< HEAD
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 namespace Modules\Job\Services;
 
 use Illuminate\Support\Facades\Log;
@@ -352,6 +374,7 @@ final class JobMonitoringService
         foreach ($metrics as $key => $value) {
             app('prometheus')->getOrRegisterGauge('jobs', $key)
                 ->set($value);
+<<<<<<< HEAD
 
 namespace Modules\Media\Services;
 
@@ -400,28 +423,39 @@ final class MediaCacheService
             ]);
             return null;
  38c1507055 (Squashed 'laravel/Modules/Media/' content from commit 4548be09a)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
         }
     }
 }
 ```
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 ## 3. Gestione Fallimenti
 **Problema**: Gestione non ottimale dei job falliti
 - Impatto: Job persi e retry inefficienti
 - Causa: Strategia di retry non ottimizzata
 
+<<<<<<< HEAD
 ## 3. Ottimizzazione Storage
 **Problema**: Gestione inefficiente dello storage media
 - Impatto: Spazio disco non ottimizzato
 - Causa: Mancanza di politiche di gestione storage
  38c1507055 (Squashed 'laravel/Modules/Media/' content from commit 4548be09a)
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 **Soluzione Proposta**:
 ```php
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 namespace Modules\Job\Services;
 
 use Illuminate\Support\Facades\Redis;
@@ -461,6 +495,7 @@ final class JobRetryService
                 'attempts' => $job->attempts() + 1
             ])
         );
+<<<<<<< HEAD
  90bf7d5b85 (Squashed 'laravel/Modules/Job/' content from commit d3ea5c83e)
 
 namespace Modules\Media\Services;
@@ -514,6 +549,8 @@ final class MediaStorageService
  38c1507055 (Squashed 'laravel/Modules/Media/' content from commit 4548be09a)
 =======
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
     }
 }
 ```
@@ -521,6 +558,7 @@ final class MediaStorageService
 ## Metriche di Performance
 
 ### Obiettivi
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -546,6 +584,8 @@ private function setupPerformanceMonitoring(): void
                     'bindings' => $query->bindings
 <<<<<<< HEAD
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 - Tempo in coda: < 30s per job prioritari
 - Memoria per job: < 64MB
 - Tasso di successo: > 99%
@@ -565,13 +605,17 @@ private function setupPerformanceMonitoring(): void
                 ->warning('Alto utilizzo memoria Redis', [
                     'memory' => $stats['used_memory'],
                     'peak' => $stats['used_memory_peak']
+<<<<<<< HEAD
  90bf7d5b85 (Squashed 'laravel/Modules/Job/' content from commit d3ea5c83e)
 =======
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
                 ]);
         }
     });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -586,6 +630,8 @@ private function setupPerformanceMonitoring(): void
                     'memory_mb' => $memoryUsage
 <<<<<<< HEAD
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
     // Monitoring job
     Queue::before(function ($job) {
         $job->start_time = microtime(true);
@@ -599,6 +645,7 @@ private function setupPerformanceMonitoring(): void
                 ->warning('Job lento rilevato', [
                     'job' => get_class($job),
                     'duration' => $duration
+<<<<<<< HEAD
  90bf7d5b85 (Squashed 'laravel/Modules/Job/' content from commit d3ea5c83e)
                 ]);
         }
@@ -644,6 +691,10 @@ private function setupPerformanceMonitoring(): void
                 ]);
         }
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+                ]);
+        }
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
     });
 }
 ```
@@ -651,6 +702,7 @@ private function setupPerformanceMonitoring(): void
 ## Piano di Implementazione
 
 ### Fase 1 (Immediata)
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -670,6 +722,8 @@ private function setupPerformanceMonitoring(): void
 - Ottimizzare scalabilità
 <<<<<<< HEAD
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 - Implementare code prioritarie
 - Migliorare monitoraggio
 - Ottimizzare gestione errori
@@ -682,13 +736,17 @@ private function setupPerformanceMonitoring(): void
 ### Fase 3 (Lungo Termine)
 - Implementare scaling automatico
 - Ottimizzare distribuzione job
+<<<<<<< HEAD
  90bf7d5b85 (Squashed 'laravel/Modules/Job/' content from commit d3ea5c83e)
 =======
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 - Migliorare resilienza
 
 ## Note Tecniche Aggiuntive
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -707,6 +765,8 @@ return [
         'memory_threshold_mb' => env('XOT_MEMORY_THRESHOLD', 100)
 <<<<<<< HEAD
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 ### 1. Configurazione Code
 ```php
 // In: config/queue.php
@@ -733,6 +793,7 @@ return [
         'driver' => env('QUEUE_FAILED_DRIVER', 'database-uuids'),
         'database' => env('DB_CONNECTION', 'mysql'),
         'table' => 'failed_jobs'
+<<<<<<< HEAD
  90bf7d5b85 (Squashed 'laravel/Modules/Job/' content from commit d3ea5c83e)
 
 - Implementare elaborazione asincrona
@@ -771,10 +832,13 @@ return [
  38c1507055 (Squashed 'laravel/Modules/Media/' content from commit 4548be09a)
 =======
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
     ]
 ];
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -870,6 +934,8 @@ trait HasXotOptimizations
         ];
 <<<<<<< HEAD
 
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 ### 2. Ottimizzazione Redis
 ```php
 // In: config/database.php
@@ -922,6 +988,7 @@ abstract class BaseJob
                 $property->setValue(null);
             }
         }
+<<<<<<< HEAD
  90bf7d5b85 (Squashed 'laravel/Modules/Job/' content from commit d3ea5c83e)
 
 ### 3. Gestione Versioni
@@ -969,6 +1036,8 @@ final class Media extends Model
  38c1507055 (Squashed 'laravel/Modules/Media/' content from commit 4548be09a)
 =======
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
     }
 }
 ``` 

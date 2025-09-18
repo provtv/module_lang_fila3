@@ -7,6 +7,7 @@
      aria-hidden="true" 
      role="img">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <!-- Globo -->
     <circle cx="12" cy="12" r="8" />
     <path stroke-linecap="round" 
@@ -44,4 +45,21 @@
           stroke-linejoin="round" 
           d="M12 15v4M9 17l3-2M15 17l-3-2" />
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+    <!-- Lista principale -->
+    <path stroke-linecap="round" 
+          stroke-linejoin="round" 
+          d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+    
+    <!-- Indicatore di processo -->
+    <circle cx="7" cy="6" r="1" fill="currentColor" />
+    <path stroke-linecap="round" 
+          stroke-linejoin="round" 
+          d="M9 6h8" />
+          
+    <!-- Indicatore di completamento -->
+    <path stroke-linecap="round" 
+          stroke-linejoin="round" 
+          d="M6.5 14.5l1 1 2-2" />
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 </svg> 

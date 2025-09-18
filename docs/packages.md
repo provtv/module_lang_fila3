@@ -1,17 +1,25 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Pacchetti del Modulo Lang
 =======
 # Pacchetti del Modulo Xot
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+# Pacchetti del Modulo Job
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 
 ## Pacchetti Utilizzati
 
 ### Core
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 - [laraxot/module_xot_fila3](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
 - [laraxot/module_ui](../UI/docs/packages.md) - Componenti UI e temi
 - [laraxot/module_tenant_fila3](../Tenant/docs/packages.md) - Gestione multi-tenant
 
+<<<<<<< HEAD
 ### Localizzazione
 - [mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
   - Gestione lingue e traduzioni
@@ -114,6 +122,31 @@
   - Testing pacchetti
   - Laravel testing
   - Integration testing
+=======
+### Queue
+- [laravel/horizon](https://github.com/laravel/horizon)
+  - Monitoraggio queue
+  - Dashboard
+  - Metriche
+
+- [spatie/laravel-queueable-action](https://github.com/spatie/laravel-queueable-action)
+  - Azioni in coda
+  - Job wrapper
+  - Retry logic
+
+## Pacchetti di Riferimento
+
+### Monitoraggio
+- [spatie/laravel-schedule-monitor](https://github.com/spatie/laravel-schedule-monitor)
+  - Monitoraggio task
+  - Alert
+  - Metriche
+
+- [spatie/laravel-activitylog](https://github.com/spatie/laravel-activitylog)
+  - Log attività
+  - Audit trail
+  - Tracciamento modifiche
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
 
 ## Pacchetti Potenziali
 
@@ -122,6 +155,7 @@
 - [spatie/laravel-model-states](https://github.com/spatie/laravel-model-states) - Stati modelli
 - [spatie/laravel-queueable-action](https://github.com/spatie/laravel-queueable-action) - Azioni in coda
 
+<<<<<<< HEAD
 ### Development
 - [spatie/laravel-ignition](https://github.com/spatie/laravel-ignition) - Debug
 - [spatie/laravel-package-tools](https://github.com/spatie/laravel-package-tools) - Strumenti
@@ -144,3 +178,26 @@
 - [Performance](packages/performance.md)
 - [Debug](packages/debug.md) 
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+### Integrazioni
+- [spatie/laravel-google-calendar](https://github.com/spatie/laravel-google-calendar) - Calendar
+- [spatie/laravel-slack-alerts](https://github.com/spatie/laravel-slack-alerts) - Alert Slack
+- [spatie/laravel-webhook-client](https://github.com/spatie/laravel-webhook-client) - Webhook
+
+## Pacchetti da Non Utilizzare
+
+### Queue
+- [laravel/telescope](https://github.com/laravel/telescope) - Non per production
+- [laravel/sanctum](https://github.com/laravel/sanctum) - Non per queue
+
+### Monitoraggio
+- [laravel/fortify](https://github.com/laravel/fortify) - Non necessario
+- [laravel/ui](https://github.com/laravel/ui) - Obsoleto
+
+## Documentazione Collegata
+
+- [Queue](packages/queue.md)
+- [Monitoraggio](packages/monitoring.md)
+- [Performance](packages/performance.md)
+- [Integrazioni](packages/integrations.md) 
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)

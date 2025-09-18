@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [{"name":"lang.change","class":"Lang\\Change","module":null,"path":null,"ns":"Modules\\Lang\\Http\\Livewire\\Lang\\Change"},{"name":"lang.switcher","class":"Lang\\Switcher","module":null,"path":null,"ns":"Modules\\Lang\\Http\\Livewire\\Lang\\Switcher"}]
 =======
 =======
@@ -33,3 +34,35 @@
 =======
 []
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+[
+    {
+        "name": "broad",
+        "class": "Broad",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\Job\\Http\\Livewire\\Broad"
+    },
+    {
+        "name": "job.status",
+        "class": "Job\\Status",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\Job\\Http\\Livewire\\Job\\Status"
+    },
+    {
+        "name": "schedule.crud",
+        "class": "Schedule\\Crud",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\Job\\Http\\Livewire\\Schedule\\Crud"
+    },
+    {
+        "name": "schedule.status",
+        "class": "Schedule\\Status",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\Job\\Http\\Livewire\\Schedule\\Status"
+    }
+]
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)

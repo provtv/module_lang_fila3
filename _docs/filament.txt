@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/statikbe/laravel-filament-chained-translation-manager
 
 https://filamentphp.com/plugins/34ml-translatable-field
@@ -25,3 +26,14 @@ https://laraveldaily.com/post/filament-activity-logs-three-packages-comparison-r
 https://github.com/statikbe/laravel-filament-chained-translation-manager
 https://filamentphp.com/plugins/34ml-translatable-field
 >>>>>>> 688d0704 (first)
+=======
+
+https://gitlab.com/amvisor/filament-failed-jobs/-/blob/master/src/FilamentFailedJobsServiceProvider.php
+
+https://github.com/croustibat/filament-jobs-monitor
+
+https://medium.com/@laravelprotips/laravel-filament-top-12-plugins-simplified-with-demonstrations-a87aa3b63a6d
+
+
+
+>>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
