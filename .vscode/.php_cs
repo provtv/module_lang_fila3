@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 declare(strict_types=1);
@@ -11,6 +12,8 @@ declare(strict_types=1);
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 =======
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
 $finder = PhpCsFixer\Finder::create()
     ->notPath('bootstrap/cache')
     ->notPath('storage')
@@ -22,15 +25,19 @@ $finder = PhpCsFixer\Finder::create()
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 =======
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
     ->ignoreVCS(true)
 ;
 
 return PhpCsFixer\Config::create()
     ->setRules(array(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -43,6 +50,8 @@ return PhpCsFixer\Config::create()
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 =======
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
         '@Symfony' => true,
         'array_indentation' => true,
         'function_typehint_space' => true,
@@ -55,6 +64,7 @@ return PhpCsFixer\Config::create()
         'ordered_imports' => true,
         'phpdoc_order' => true,
         'php_unit_construct' => false,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -72,11 +82,16 @@ return PhpCsFixer\Config::create()
         'braces'=>[
             'position_after_functions_and_oop_constructs'=>'same',
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+        'braces'=>[
+            'position_after_functions_and_oop_constructs'=>'same',
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
         ],
         'function_declaration' => true,
         'blank_line_after_namespace' => true,
         'class_definition' => true,
         'elseif' => true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -97,3 +112,8 @@ return PhpCsFixer\Config::create()
     ->setFinder($finder)
 ;
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+    ))
+    ->setFinder($finder)
+;
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)

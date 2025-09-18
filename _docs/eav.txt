@@ -23,5 +23,8 @@ https://learn.userfrosting.com/recipes/extending-the-user-model
 
 
 
+<<<<<<< HEAD
 https://github.com/yemenpoint/filament-custom-fields
 
+=======
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)

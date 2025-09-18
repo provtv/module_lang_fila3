@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 
@@ -24,6 +25,8 @@ declare(strict_types=1);
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 =======
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
 $finder = PhpCsFixer\Finder::create()
     ->notPath('bootstrap/cache')
     ->notPath('storage')
@@ -32,6 +35,7 @@ $finder = PhpCsFixer\Finder::create()
     ->name('*.php')
     ->notName('*.blade.php')
     ->ignoreDotFiles(true)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -55,6 +59,9 @@ $finder = PhpCsFixer\Finder::create()
 =======
     ->ignoreVCS(true)
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+    ->ignoreVCS(true)
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
 
 $config = new PhpCsFixer\Config();
 
@@ -69,6 +76,7 @@ $config
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         //'binary_operator_spaces' => ['align_double_arrow' => false],
 =======
         // 'binary_operator_spaces' => ['align_double_arrow' => false],
@@ -79,6 +87,9 @@ $config
 =======
         //'binary_operator_spaces' => ['align_double_arrow' => false],
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+        //'binary_operator_spaces' => ['align_double_arrow' => false],
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
         'array_syntax' => ['syntax' => 'short'],
         'linebreak_after_opening_tag' => true,
         'not_operator_with_successor_space' => true,
@@ -93,6 +104,7 @@ $config
         'class_definition' => true,
         'elseif' => true,
     ])
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -124,3 +136,8 @@ return $config;
 
 return $config;
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+    ->setFinder($finder)
+
+return $config;
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)

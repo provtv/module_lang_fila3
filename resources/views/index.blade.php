@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 nds('lang::layouts.master')
 =======
 @extends('lang::layouts.master')
@@ -19,11 +20,15 @@ nds('lang::layouts.master')
 =======
 @extends('job::layouts.master')
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+@extends('user::layouts.master')
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
 
 @section('content')
     <h1>Hello World</h1>
 
     <p>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         This view is loaded from module: {!! config('lang.name') !!}
@@ -39,3 +44,8 @@ nds('lang::layouts.master')
     </p>
 @endsection
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+        This view is loaded from module: {!! config('user.name') !!}
+    </p>
+@endsection
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)

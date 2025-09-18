@@ -1,6 +1,7 @@
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Lang",
     "alias": "Lang",
     "description": "label language",
@@ -48,3 +49,21 @@
 =======
 }
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+    "name": "User",
+    "alias": "user",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\User\\Providers\\UserServiceProvider",
+        "Modules\\User\\Providers\\Filament\\AdminPanelProvider"
+    ],
+    "migration": {
+        "seeds": [
+            "Modules\\User\\Database\\Seeders\\RolesSeeder"
+        ]
+    },
+    "files": []
+}
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)

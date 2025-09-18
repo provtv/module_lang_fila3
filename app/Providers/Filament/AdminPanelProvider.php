@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 <<<<<<< HEAD
@@ -21,10 +22,27 @@ use Filament\SpatieLaravelTranslatablePlugin;
 namespace Modules\Job\Providers\Filament;
 
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+/**
+ * ---.
+ */
+
+declare(strict_types=1);
+
+namespace Modules\User\Providers\Filament;
+
+use Filament\Navigation\MenuItem;
+use Filament\Panel;
+use Filament\Support\Facades\FilamentView;
+use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\Facades\View;
+use Modules\User\Filament\Pages\MyProfilePage;
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 class AdminPanelProvider extends XotBasePanelProvider
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     protected string $module = 'Lang';
 <<<<<<< HEAD
@@ -66,4 +84,67 @@ class AdminPanelProvider extends XotBasePanelProvider
 =======
     protected string $module = 'Job';
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+    protected string $module = 'User';
+
+    public function panel(Panel $panel): Panel
+    {
+        $panel = parent::panel($panel);
+
+        FilamentView::registerRenderHook(
+            'panels::auth.login.form.after',
+            static fn (): string => Blade::render("@livewire('socialite.buttons')"),
+        );
+
+        /*-- moved into Gdpr
+        FilamentView::registerRenderHook(
+            'panels::auth.login.form.after',
+            fn (): string => Blade::render('@livewire(\'terms-of-service\')'),
+        );
+        */
+
+        /* -- moved into Notify
+        DatabaseNotifications::trigger('notifications.database-notifications-trigger');
+        FilamentView::registerRenderHook(
+            'panels::user-menu.before',
+            fn (): string => Blade::render('@livewire(\'database-notifications\')'),
+        );
+        //*/
+
+        FilamentView::registerRenderHook(
+            'panels::user-menu.before',
+            static fn (): string => Blade::render("@livewire('team.change')"),
+        );
+
+        FilamentView::registerRenderHook(
+            'panels::user-menu.before',
+            // static fn (): string => View::make('user::badges.super-admin')->render(),
+            static fn (): string => Blade::render("@livewire('profile.super-admin')"),
+        );
+
+        /*
+        $panel->renderHook(
+            'panels::user-menu.before',
+            fn (): string => Blade::render('@livewire(\'team.change\')'),
+        );
+        */
+        // $tenantId = request()->route()->parameter('tenant');
+        // $profile_url = MyProfilePage::getUrl(panel: 'admin');
+        // $panel->default();
+        // $profile_url = MyProfilePage::getUrl(panel: 'admin');
+        // $panel = $panel->pages([
+        //     MyProfilePage::class,
+        // ]);
+        // $profile_url = '#';
+        // $panel->userMenuItems([
+        //     // 'account' => MenuItem::make()->url($profile_url),
+        //     MenuItem::make()
+        //
+        //         ->url(fn (): string => '#')
+        //         ->icon('heroicon-m-cog-8-tooth'),
+        // ]);
+
+        return $panel;
+    }
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
 }

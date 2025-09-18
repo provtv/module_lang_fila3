@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 https://betterprogramming.pub/laravel-fail-retry-or-delay-a-queued-job-from-itself-41e0bb14440c
 
@@ -107,3 +108,26 @@ https://websolutionstuff.com/post/laravel-9-cron-job-task-scheduling-tutorial  !
 
 
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+https://packagist.org/packages/althinect/filament-spatie-roles-permissions
+
+
+https://github.com/chiiya/filament-access-control
+
+
+use Filament\Facades\Filament;
+return Filament::auth()->user()->can(static::getPermissionName());
+
+
+
+https://github.com/ryangjchandler/filament-user-resource/blob/main/src/resources/UserResource.php
+
+
+
+Easily Add Face Authentication to Your Laravel Applications
+https://codebrisk.com/blog/easily-add-face-authentication-to-your-laravel-applications
+
+
+----- molti pacchetti interessanti --
+https://codebrisk.com/blog/categories/laravel-packages
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)

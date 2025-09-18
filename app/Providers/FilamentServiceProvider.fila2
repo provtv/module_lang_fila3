@@ -2,13 +2,23 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Job\Providers;
+=======
+namespace Modules\User\Providers;
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
 
 use Modules\Xot\Providers\XotBaseContextServiceProvider;
 
 class FilamentServiceProvider extends XotBaseContextServiceProvider
 {
+<<<<<<< HEAD
     public static string $name = 'job-filament';
     
     public static string $module = 'Job';
+=======
+    public static string $name = 'user-filament';
+    
+    public static string $module = 'User';
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
 }

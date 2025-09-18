@@ -2,13 +2,21 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Job\Http\Middleware;
+=======
+namespace Modules\User\Http\Middleware;
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
 
 use Modules\Xot\Http\Middleware\XotBaseFilamentMiddleware;
 
 class FilamentMiddleware extends XotBaseFilamentMiddleware
 {
+<<<<<<< HEAD
     public static string $module = 'Job';
+=======
+    public static string $module = 'User';
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
 
     public static string $context = 'filament';
 }

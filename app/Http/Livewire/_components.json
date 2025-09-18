@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [{"name":"lang.change","class":"Lang\\Change","module":null,"path":null,"ns":"Modules\\Lang\\Http\\Livewire\\Lang\\Change"},{"name":"lang.switcher","class":"Lang\\Switcher","module":null,"path":null,"ns":"Modules\\Lang\\Http\\Livewire\\Lang\\Switcher"}]
 =======
 =======
@@ -66,3 +67,84 @@
     }
 ]
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+[
+    {
+        "name": "auth.login",
+        "class": "Auth\\Login",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\Http\\Livewire\\Auth\\Login"
+    },
+    {
+        "name": "auth.passwords.confirm",
+        "class": "Auth\\Passwords\\Confirm",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\Http\\Livewire\\Auth\\Passwords\\Confirm"
+    },
+    {
+        "name": "auth.passwords.email",
+        "class": "Auth\\Passwords\\Email",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\Http\\Livewire\\Auth\\Passwords\\Email"
+    },
+    {
+        "name": "auth.passwords.reset",
+        "class": "Auth\\Passwords\\Reset",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\Http\\Livewire\\Auth\\Passwords\\Reset"
+    },
+    {
+        "name": "auth.register",
+        "class": "Auth\\Register",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\Http\\Livewire\\Auth\\Register"
+    },
+    {
+        "name": "auth.verify",
+        "class": "Auth\\Verify",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\Http\\Livewire\\Auth\\Verify"
+    },
+    {
+        "name": "privacy-policy",
+        "class": "PrivacyPolicy",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\Http\\Livewire\\PrivacyPolicy"
+    },
+    {
+        "name": "profile.super-admin",
+        "class": "Profile\\SuperAdmin",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\Http\\Livewire\\Profile\\SuperAdmin"
+    },
+    {
+        "name": "socialite.buttons",
+        "class": "Socialite\\Buttons",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\Http\\Livewire\\Socialite\\Buttons"
+    },
+    {
+        "name": "team.change",
+        "class": "Team\\Change",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\Http\\Livewire\\Team\\Change"
+    },
+    {
+        "name": "terms-of-service",
+        "class": "TermsOfService",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\Http\\Livewire\\TermsOfService"
+    }
+]
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)

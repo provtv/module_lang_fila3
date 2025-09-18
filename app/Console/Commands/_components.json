@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 []
 =======
 [
@@ -170,3 +171,98 @@
     }
 ]
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+[
+    {
+        "name": "assign-module-command",
+        "class": "AssignModuleCommand",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\Console\\Commands\\AssignModuleCommand"
+    },
+    {
+        "name": "assign-role-command",
+        "class": "AssignRoleCommand",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\Console\\Commands\\AssignRoleCommand"
+    },
+    {
+        "name": "assign-team-command",
+        "class": "AssignTeamCommand",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\Console\\Commands\\AssignTeamCommand"
+    },
+    {
+        "name": "assign-tenant-command",
+        "class": "AssignTenantCommand",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\Console\\Commands\\AssignTenantCommand"
+    },
+    {
+        "name": "change-password-command",
+        "class": "ChangePasswordCommand",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\Console\\Commands\\ChangePasswordCommand"
+    },
+    {
+        "name": "create-team-command",
+        "class": "CreateTeamCommand",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\Console\\Commands\\CreateTeamCommand"
+    },
+    {
+        "name": "create-tenant-command",
+        "class": "CreateTenantCommand",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\Console\\Commands\\CreateTenantCommand"
+    },
+    {
+        "name": "fetch-user-api-token-command",
+        "class": "FetchUserApiTokenCommand",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\Console\\Commands\\FetchUserApiTokenCommand"
+    },
+    {
+        "name": "remove-role-command",
+        "class": "RemoveRoleCommand",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\Console\\Commands\\RemoveRoleCommand"
+    },
+    {
+        "name": "set-current-team-command",
+        "class": "SetCurrentTeamCommand",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\Console\\Commands\\SetCurrentTeamCommand"
+    },
+    {
+        "name": "show-tenant-list-command",
+        "class": "ShowTenantListCommand",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\Console\\Commands\\ShowTenantListCommand"
+    },
+    {
+        "name": "show-user-list-command",
+        "class": "ShowUserListCommand",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\Console\\Commands\\ShowUserListCommand"
+    },
+    {
+        "name": "super-admin-command",
+        "class": "SuperAdminCommand",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\Console\\Commands\\SuperAdminCommand"
+    }
+]
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)

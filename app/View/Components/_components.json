@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [{"name":"flag","class":"Flag","module":null,"path":null,"ns":"Modules\\Lang\\View\\Components\\Flag"}]
 =======
 <<<<<<< HEAD
@@ -61,3 +62,14 @@
 =======
 []
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+[
+    {
+        "name": "mail.message",
+        "class": "Mail\\Message",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\User\\View\\Components\\Mail\\Message"
+    }
+]
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)

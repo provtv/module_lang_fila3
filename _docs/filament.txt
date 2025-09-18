@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/statikbe/laravel-filament-chained-translation-manager
 
 https://filamentphp.com/plugins/34ml-translatable-field
@@ -37,3 +38,11 @@ https://medium.com/@laravelprotips/laravel-filament-top-12-plugins-simplified-wi
 
 
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+https://github.com/Althinect/filament-spatie-roles-permissions
+https://github.com/ryangjchandler/filament-profile
+
+https://github.com/andrewdwallo/filament-companies
+
+
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)

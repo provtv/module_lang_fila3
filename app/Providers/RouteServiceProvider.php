@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Lang\Providers;
 
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
@@ -139,18 +140,26 @@ class RouteServiceProvider extends ServiceProvider
     protected string $moduleNamespace = 'Modules\Xot\Http\Controllers';
 =======
 namespace Modules\Job\Providers;
+=======
+namespace Modules\User\Providers;
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
 
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
     protected string $moduleNamespace = 'Modules\Job\Http\Controllers';
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+    protected string $moduleNamespace = 'Modules\User\Http\Controllers';
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     public string $name = 'Xot';
 
@@ -396,4 +405,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 =======
     public string $name = 'Job';
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+    public string $name = 'User';
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
 }

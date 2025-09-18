@@ -1,6 +1,7 @@
 providers:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Modules\Lang\Providers\LangServiceProvider
 =======
   - Modules\Xot\Providers\XotServiceProvider
@@ -10,3 +11,7 @@ providers:
 =======
   - Modules\Job\Providers\JobServiceProvider
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+  - Modules\User\Providers\UserServiceProvider
+  - Modules\User\Providers\Filament\AdminPanelProvider
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)

@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 lament::page>
 =======
 <x-filament::page>
@@ -35,3 +36,8 @@ lament::page>
     --}}
 </x-filament::page>
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+<x-filament::page>
+
+</x-filament::page>
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)

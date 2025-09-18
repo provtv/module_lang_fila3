@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Lang\Models;
 
 // use GeneaLabs\LaravelModelCaching\Traits\Cachable;
@@ -19,11 +20,18 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 =======
 namespace Modules\Job\Models;
+=======
+namespace Modules\User\Models;
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+use Modules\Xot\Models\Traits\RelationX;
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
 use Modules\Xot\Traits\Updater;
 
 /**
@@ -32,6 +40,7 @@ use Modules\Xot\Traits\Updater;
 abstract class BaseModel extends Model
 {
     use HasFactory;
+<<<<<<< HEAD
 
     // use Searchable;
 <<<<<<< HEAD
@@ -43,11 +52,15 @@ abstract class BaseModel extends Model
 =======
     // //use Cachable;
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+    use RelationX;
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
     use Updater;
 
     /**
      * Indicates whether attributes are snake cased on arrays.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @see  https://laravel-news.com/6-eloquent-secrets
@@ -57,6 +70,9 @@ abstract class BaseModel extends Model
 =======
      * @see https://laravel-news.com/6-eloquent-secrets
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+     * @see https://laravel-news.com/6-eloquent-secrets
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
      *
      * @var bool
      */
@@ -64,8 +80,11 @@ abstract class BaseModel extends Model
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
     /** @var bool */
     public $incrementing = true;
 
@@ -76,6 +95,7 @@ abstract class BaseModel extends Model
     protected $perPage = 30;
 
     /** @var string */
+<<<<<<< HEAD
 <<<<<<< HEAD
     protected $connection = 'lang';
 =======
@@ -101,10 +121,18 @@ abstract class BaseModel extends Model
 <<<<<<< HEAD
 =======
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+    protected $connection = 'user';
+
+    /** @var list<string> */
+    protected $appends = [];
+
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
     /** @var string */
     protected $primaryKey = 'id';
 
     /** @var string */
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     protected $primaryKey = 'id';
@@ -112,6 +140,8 @@ abstract class BaseModel extends Model
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 =======
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
     protected $keyType = 'string';
 
     /** @var list<string> */
@@ -119,6 +149,7 @@ abstract class BaseModel extends Model
         // 'password'
     ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * Create a new factory instance for the model.
@@ -148,6 +179,13 @@ abstract class BaseModel extends Model
      * Create a new factory instance for the model.
      *
      * @return \Illuminate\Database\Eloquent\Factories\Factory<static>
+=======
+    /**
+     * @see vendor/ laravel / framework / src / Illuminate / Database / Eloquent / Factories / HasFactory.php
+     * Create a new factory instance for the model.
+     *
+     * @return Factory<static>
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
      */
     protected static function newFactory()
     {
@@ -155,11 +193,15 @@ abstract class BaseModel extends Model
     }
 
     /** @return array<string, string> */
+<<<<<<< HEAD
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
     protected function casts(): array
     {
         return [
             'id' => 'string',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'uuid' => 'string', 'published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
 =======
@@ -179,6 +221,13 @@ abstract class BaseModel extends Model
             'uuid' => 'string',
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
             'published_at' => 'datetime',
+=======
+            'uuid' => 'string',
+
+            'published_at' => 'datetime',
+            'verified_at' => 'datetime',
+
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
@@ -188,8 +237,11 @@ abstract class BaseModel extends Model
             'deleted_by' => 'string',
         ];
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 =======
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
     }
 }

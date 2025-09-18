@@ -7,7 +7,11 @@ jobs:
         name: PHP Insights checks
         steps:
             - uses: actions/checkout@v2
+<<<<<<< HEAD
             - uses: shivammathur/setup-php@v2
+=======
+            - uses: shivammathur/setup-php@latest
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
               with:
                   php-version: 8.1
             - run: composer install --prefer-dist --no-progress

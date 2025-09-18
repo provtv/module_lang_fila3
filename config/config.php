@@ -5,6 +5,7 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'name' => 'Lang',
     'description' => 'Modulo per la gestione delle traduzioni e localizzazioni',
     'icon' => 'heroicon-o-language',
@@ -27,12 +28,21 @@ return [
         'enabled' => true,
         'sort' => 40,
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+    'name' => 'User',
+    'description' => 'Modulo per la gestione degli utenti e autorizzazioni',
+    'icon' => 'heroicon-o-users',
+    'navigation' => [
+        'enabled' => true,
+        'sort' => 100,
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
     ],
     'routes' => [
         'enabled' => true,
         'middleware' => ['web', 'auth'],
     ],
     'providers' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         'Modules\\Lang\\Providers\\LangServiceProvider',
@@ -42,5 +52,8 @@ return [
 =======
         'Modules\\Job\\Providers\\JobServiceProvider',
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+        'Modules\\User\\Providers\\UserServiceProvider',
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
     ],
 ];

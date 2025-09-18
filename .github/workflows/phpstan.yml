@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: PHPStan
 
 on:
@@ -10,6 +11,11 @@ on:
       - '**.php'
       - 'phpstan.neon.dist'
 
+=======
+name: Static Analysis
+
+on: [push]
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
 
 jobs:
   phpstan:
@@ -19,6 +25,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Setup PHP
+<<<<<<< HEAD
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.1'
@@ -36,3 +43,16 @@ jobs:
 
       - name: Run PHPStan
         run: ./vendor/bin/phpstan --error-format=github
+=======
+        uses: shivammathur/setup-php@latest
+        with:
+          php-version: '8.2'
+          coverage: none
+
+      - name: Install composer dependencies
+        run: composer install -n --prefer-dist
+
+      - name: Run Static Analysis
+        run: ./vendor/bin/phpstan --error-format=github
+
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)

@@ -5,6 +5,7 @@ import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 export default defineConfig({
     build: {
         outDir: '../../public/build-user',
@@ -24,6 +25,8 @@ export default defineConfig({
     ],
 });
 =======
+=======
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
 export default defineConfig(
     {
         build: {
@@ -46,4 +49,7 @@ export default defineConfig(
         ],
     }
 );
+<<<<<<< HEAD
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)

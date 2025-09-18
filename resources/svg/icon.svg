@@ -8,6 +8,7 @@
      role="img">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <!-- Globo -->
     <circle cx="12" cy="12" r="8" />
     <path stroke-linecap="round" 
@@ -62,4 +63,23 @@
           stroke-linejoin="round" 
           d="M6.5 14.5l1 1 2-2" />
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+    <!-- Utente principale -->
+    <circle cx="12" cy="8" r="3" />
+    <path stroke-linecap="round" 
+          stroke-linejoin="round" 
+          d="M12 11c-3.5 0-6 2-6 5v2h12v-2c0-3-2.5-5-6-5z" />
+    
+    <!-- Utente a sinistra -->
+    <circle cx="6" cy="6" r="2" />
+    <path stroke-linecap="round" 
+          stroke-linejoin="round" 
+          d="M4 14c-.5-1.5-1-2-2-2" />
+    
+    <!-- Utente a destra -->
+    <circle cx="18" cy="6" r="2" />
+    <path stroke-linecap="round" 
+          stroke-linejoin="round" 
+          d="M20 14c.5-1.5 1-2 2-2" />
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
 </svg> 

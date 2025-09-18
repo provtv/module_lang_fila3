@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ==============================================
 # LARAXOT MODULE LANG - .GITIGNORE
 # ==============================================
@@ -248,23 +249,40 @@ package-lock.json
 *.stackdump
 *.cache
 /build
+=======
+/vendor
+*.lock
+/build
+*.cache
+*.phar
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
 .git-blame-ignore-revs
 .git-rewrite
 .php-cs-fixer.cache
 *.phar
+<<<<<<< HEAD
 .git-rewrite/
 
 node_modules
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+*.cache
+package-lock.json
+.git-rewrite/
+node_modules
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
 .git-blame-ignore-revs
 .git-blame-ignore-revs
 node_modules
 vendor
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 0fcceb64 (Squashed 'bashscripts/' content from commit 38660fd8)
 .php-cs-fixer.cache
 =======
 >>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
+=======
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
 .git-blame-ignore-revs
 build/
 vendor/
@@ -272,6 +290,7 @@ build/
 node_modules
 docs/cache/
 cache/
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 *.exe
@@ -466,3 +485,10 @@ cache/
 .php-cs-fixer.cache
 *:Zone.Identifier
 >>>>>>> 4930fb00 (Squashed 'laravel/Modules/Job/' content from commit 5c1a4b65)
+=======
+.git-blame-ignore-revs
+.php-cs-fixer.cache
+build
+*.exe
+*:Zone.Identifier
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)

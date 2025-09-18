@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'value' => [
         'label' => 'Valore',
         'placeholder' => 'Inserisci il valore',
@@ -134,5 +135,26 @@ return [
         'label' => 'Test',
         'placeholder' => 'Inserisci valore test',
         'help' => 'Campo per test del sistema',
+=======
+    'name' => 'Nome',
+    'slug' => 'Slug',
+    'email' => 'Email',
+    'created_at' => 'Creato il',
+    'updated_at' => 'Aggiornato il',
+    'role' => 'Ruolo',
+    'id.label' => 'ID',
+    'name.label' => 'Nome',
+    'slug.label' => 'Slug',
+    'actions' => [
+        'attach_user' => 'Attacca utente',
+    ],
+    'new_password' => [
+        'label' => 'Nuova Password',
+        'placeholder' => 'Inserisci la tua nuova password',
+    ],
+    'confirm_password' => [
+        'label' => 'Conferma Password',
+        'placeholder' => 'Conferma la tua nuova password',
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
     ],
 ];

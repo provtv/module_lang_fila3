@@ -1,5 +1,8 @@
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
 Tracker gathers a lot of information from your requests to identify and store:
 - Sessions
 - Page Views (hits on routes)
@@ -21,6 +24,7 @@ Tracker gathers a lot of information from your requests to identify and store:
 https://github.com/antonioribeiro/tracker
 
 ---
+<<<<<<< HEAD
 
 https://github.com/visualbuilder/email-templates
 
@@ -29,3 +33,5 @@ https://github.com/codedor/filament-mail-templates/
 
 https://www.mailcoach.app/resources/blog/using-the-mailcoach-markdown-editor-in-filament
  946fdba366 (Squashed 'laravel/Modules/Notify/' content from commit 6aac1e028)
+=======
+>>>>>>> 0bcedf94 (Squashed 'laravel/Modules/User/' content from commit 947e4724)
