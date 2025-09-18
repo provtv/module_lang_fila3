@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 
@@ -10,6 +11,8 @@ declare(strict_types=1);
 >>>>>>> dc312f89 (.)
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
 return [
     'fields' => [
         'stabilimento' => [

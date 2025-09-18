@@ -19,12 +19,16 @@ use Livewire\Component;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Webmozart\Assert\Assert;
 >>>>>>> dc312f89 (.)
 =======
 use Webmozart\Assert\Assert;
 >>>>>>> c010b2b8 (.)
+=======
+use Webmozart\Assert\Assert;
+>>>>>>> 499a5da9 (.)
 
 // Route::get('{path}', RedirectToPreferredLanguage::class)
 // ->where('path', '^(?!(en|de)).*');
@@ -50,6 +54,7 @@ class Change extends Component
                 // Verifichiamo che $url sia una stringa o lo convertiamo in modo sicuro
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if (! is_string($url)) {
                     // Se non è una stringa, utilizziamo una URL di fallback
                     $url = '/'.$key;
@@ -63,6 +68,11 @@ class Change extends Component
                     // Se non è una stringa, utilizziamo una URL di fallback
                     $url = '/' . $key;
 >>>>>>> c010b2b8 (.)
+=======
+                if (!is_string($url)) {
+                    // Se non è una stringa, utilizziamo una URL di fallback
+                    $url = '/' . $key;
+>>>>>>> 499a5da9 (.)
                 } else {
                     $url = Str::of($url)->replace(url(''), '')->toString();
                 }

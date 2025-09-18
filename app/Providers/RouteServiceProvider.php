@@ -15,6 +15,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
      * The module namespace to assume when generating URLs to actions.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var string
@@ -23,6 +24,10 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
      *
      * @var string
 >>>>>>> c010b2b8 (.)
+=======
+     *
+     * @var string
+>>>>>>> 499a5da9 (.)
      */
     protected string $moduleNamespace = 'Modules\Lang\Http\Controllers';
 
@@ -30,6 +35,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
      * The directory of the module.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var string
@@ -38,6 +44,10 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
      *
      * @var string
 >>>>>>> c010b2b8 (.)
+=======
+     *
+     * @var string
+>>>>>>> 499a5da9 (.)
      */
     protected string $module_dir = __DIR__;
 
@@ -45,6 +55,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
      * The namespace of the module.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var string
@@ -53,6 +64,10 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
      *
      * @var string
 >>>>>>> c010b2b8 (.)
+=======
+     *
+     * @var string
+>>>>>>> 499a5da9 (.)
      */
     protected string $module_ns = __NAMESPACE__;
 
@@ -60,6 +75,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
      * The name of the module.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var string
@@ -68,6 +84,10 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
      *
      * @var string
 >>>>>>> c010b2b8 (.)
+=======
+     *
+     * @var string
+>>>>>>> 499a5da9 (.)
      */
     public string $name = 'Lang';
 
@@ -75,6 +95,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
      * Bootstrap the module services.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @return void
@@ -83,10 +104,15 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
      *
      * @return void
 >>>>>>> c010b2b8 (.)
+=======
+     *
+     * @return void
+>>>>>>> 499a5da9 (.)
      */
     public function boot(): void
     {
         parent::boot();
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         // $this->registerLang(); // ✅ Temporaneamente disabilitato per debug
@@ -96,10 +122,14 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 =======
         $this->registerLang();
 >>>>>>> c010b2b8 (.)
+=======
+        $this->registerLang();
+>>>>>>> 499a5da9 (.)
     }
 
     /**
      * Register the module services.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -110,10 +140,15 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
      *
      * @return void
 >>>>>>> c010b2b8 (.)
+=======
+     *
+     * @return void
+>>>>>>> 499a5da9 (.)
      */
     public function register(): void
     {
         parent::register();
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         // $this->registerLang();
@@ -121,10 +156,13 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 >>>>>>> dc312f89 (.)
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
     }
 
     /**
      * Registra le impostazioni di lingua basate sulla configurazione.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      */
@@ -151,6 +189,8 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 =======
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
      *
      * @return void
      */
@@ -167,14 +207,18 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
         $langs = array_keys($locales);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> dc312f89 (.)
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
         $n = 1;
         if (inAdmin()) {
             $n = 3;
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (\in_array(request()->segment($n), $langs, false)) {
@@ -184,14 +228,19 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 =======
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
         if (in_array(request()->segment($n), $langs, false)) {
             /** @var string|null $lang */
             $lang = request()->segment($n);
             if ($lang !== null) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> dc312f89 (.)
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
                 app()->setLocale($lang);
             }
         }

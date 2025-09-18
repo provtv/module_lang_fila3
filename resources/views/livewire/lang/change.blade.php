@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 x-data="{ open: false }">
     <button
         @click="open = !open"
@@ -37,6 +38,8 @@ x-data="{ open: false }">
 =======
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
 <div>
     <button data-dropdown-toggle="dropdown-language"
         class="grid py-3 text-sm font-semibold transition rounded-lg place-items-center">
@@ -54,14 +57,18 @@ x-data="{ open: false }">
                         href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}"
                         class="flex items-center w-full px-2 py-3 space-x-2 transition rounded hover:bg-white">
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> dc312f89 (.)
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
                         <x-filament::icon icon="ui-flags.{{ $localeCode }}" class="size-5" />
                         <div>{{ $properties['native'] }}</div>
                     </a>
                 </li>
             @endforeach
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             {{--
@@ -71,6 +78,9 @@ x-data="{ open: false }">
 =======
             {{--  
 >>>>>>> c010b2b8 (.)
+=======
+            {{--  
+>>>>>>> 499a5da9 (.)
 			<li>
 				<button class="flex items-center w-full px-2 py-3 space-x-2 transition rounded hover:bg-white">
 					<svg xmlns="http://www.w3.org/2000/svg" class="size-5" id="flag-icons-us" viewBox="0 0 640 480">

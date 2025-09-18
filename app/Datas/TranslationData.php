@@ -21,17 +21,21 @@ class TranslationData extends Data
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public ?string $filename=null;
 
 =======
 >>>>>>> dc312f89 (.)
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
     // public string $key;
     public int|string|null $value = null;
 
     public function getFilename(): string
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         if($this->filename!=null){
@@ -41,11 +45,14 @@ class TranslationData extends Data
 >>>>>>> dc312f89 (.)
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
         $hints = app('translator')->getLoader()->namespaces();
         $path = collect($hints)->get($this->namespace);
         if (null === $path) {
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -57,15 +64,20 @@ class TranslationData extends Data
 =======
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
         
         // Verifichiamo che $path sia una stringa
         Assert::string($path, 'Il percorso del namespace deve essere una stringa');
         
         return app(\Modules\Xot\Actions\File\FixPathAction::class)->execute($path.'/'.$this->lang.'/'.$this->group.'.php');
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> dc312f89 (.)
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
     }
 
     public function getData(): array

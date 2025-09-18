@@ -27,6 +27,7 @@ class TranslationFactory extends Factory
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function definition(): void {
 =======
     public function definition()
@@ -36,6 +37,10 @@ class TranslationFactory extends Factory
     public function definition()
     {
 >>>>>>> c010b2b8 (.)
+=======
+    public function definition()
+    {
+>>>>>>> 499a5da9 (.)
         return [
             'id' => fake()->randomNumber(5),
             'lang' => fake()->word,

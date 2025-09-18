@@ -54,12 +54,16 @@ use Spatie\Sluggable\SlugOptions;
  * @property Model|\Eloquent $linkable
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  *
 >>>>>>> dc312f89 (.)
 =======
  *
 >>>>>>> c010b2b8 (.)
+=======
+ *
+>>>>>>> 499a5da9 (.)
  * @method static \Illuminate\Database\Eloquent\Builder|Post newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Post newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Post query()
@@ -96,6 +100,7 @@ use Spatie\Sluggable\SlugOptions;
  * @method static \Illuminate\Database\Eloquent\Builder|Post whereViewsCount($value)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  * @mixin \Eloquent
@@ -104,20 +109,26 @@ use Spatie\Sluggable\SlugOptions;
 =======
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
  *
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  *
  * @mixin \Eloquent
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> dc312f89 (.)
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
  */
 class Post extends Model
 {
     use HasFactory;
     use HasSlug;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -137,6 +148,10 @@ class Post extends Model
     use Updater;
     use Cachable;
 >>>>>>> c010b2b8 (.)
+=======
+    use Updater;
+    use Cachable;
+>>>>>>> 499a5da9 (.)
 
     final public const SEARCHABLE_FIELDS = ['title', 'guid', 'txt'];
 
@@ -157,11 +172,14 @@ class Post extends Model
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     // use Searchable;
 =======
 >>>>>>> dc312f89 (.)
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
     /** @var string */
     protected $connection = 'lang';
 
@@ -180,6 +198,7 @@ class Post extends Model
         // ------ BUFFER ----
         'url', 'url_lang', // buffer
         'image_resize_src', // buffer
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     ];
@@ -201,6 +220,8 @@ class Post extends Model
 =======
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
         'category_id', 'image', 'content',
         'published', 'created_by', 'updated_by',
     ];
@@ -232,9 +253,12 @@ class Post extends Model
         'relatedrev_count',
     ];
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> dc312f89 (.)
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
 
     /**
      * Get the options for generating the slug.
@@ -246,6 +270,7 @@ class Post extends Model
             ->saveSlugsTo('guid');
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     // -------- relationship ------
@@ -280,6 +305,8 @@ class Post extends Model
 =======
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
     /**
      * Get the owning commentable model.
      */
@@ -336,9 +363,12 @@ class Post extends Model
         return null;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> dc312f89 (.)
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
 
     public function setTitleAttribute(string $value): void
     {
@@ -349,6 +379,7 @@ class Post extends Model
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Undocumented function.
 =======
      * ---.
@@ -356,6 +387,9 @@ class Post extends Model
 =======
      * ---.
 >>>>>>> c010b2b8 (.)
+=======
+     * ---.
+>>>>>>> 499a5da9 (.)
      */
     public function getTitleAttribute(?string $value): ?string
     {
@@ -371,6 +405,7 @@ class Post extends Model
                 ? (string) $this->attributes['post_id'] : '';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             $value = $postType.' '.$postId;
 =======
             $value = $postType . ' ' . $postId;
@@ -378,12 +413,16 @@ class Post extends Model
 =======
             $value = $postType . ' ' . $postId;
 >>>>>>> c010b2b8 (.)
+=======
+            $value = $postType . ' ' . $postId;
+>>>>>>> 499a5da9 (.)
         } else {
             // Assicuriamoci che post_type e post_id siano stringhe
             $postType = is_string($this->post_type) ? $this->post_type : '';
             $postId = is_scalar($this->post_id) ? (string) $this->post_id : '';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             $value = $postType.' '.$postId;
 =======
             $value = $postType . ' ' . $postId;
@@ -391,6 +430,9 @@ class Post extends Model
 =======
             $value = $postType . ' ' . $postId;
 >>>>>>> c010b2b8 (.)
+=======
+            $value = $postType . ' ' . $postId;
+>>>>>>> 499a5da9 (.)
         }
 
         $this->title = $value;
@@ -417,6 +459,7 @@ class Post extends Model
                 ? (string) $this->attributes['post_id'] : '';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             $value = $postType.' '.$postId;
 =======
             $value = $postType . ' ' . $postId;
@@ -424,6 +467,9 @@ class Post extends Model
 =======
             $value = $postType . ' ' . $postId;
 >>>>>>> c010b2b8 (.)
+=======
+            $value = $postType . ' ' . $postId;
+>>>>>>> 499a5da9 (.)
         }
         if (null === $value) {
             $value = 'u-'.random_int(1, 1000);
@@ -445,6 +491,7 @@ class Post extends Model
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function toSearchableArray(): void {
 =======
     public function toSearchableArray()
@@ -454,6 +501,10 @@ class Post extends Model
     public function toSearchableArray()
     {
 >>>>>>> c010b2b8 (.)
+=======
+    public function toSearchableArray()
+    {
+>>>>>>> 499a5da9 (.)
         return $this->only(self::SEARCHABLE_FIELDS);
     }
 
@@ -474,6 +525,7 @@ class Post extends Model
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 }// end class
 =======
 }
@@ -481,3 +533,6 @@ class Post extends Model
 =======
 }
 >>>>>>> c010b2b8 (.)
+=======
+}
+>>>>>>> 499a5da9 (.)

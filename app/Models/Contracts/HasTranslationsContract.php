@@ -14,6 +14,7 @@ interface HasTranslationsContract
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param string $key               Il nome dell'attributo da tradurre
      * @param string $locale            Il codice della lingua richiesta
      * @param bool   $useFallbackLocale Se utilizzare o meno la lingua di fallback quando la traduzione richiesta non è disponibile
@@ -21,14 +22,19 @@ interface HasTranslationsContract
 =======
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
      * @param string $key Il nome dell'attributo da tradurre
      * @param string $locale Il codice della lingua richiesta
      * @param bool $useFallbackLocale Se utilizzare o meno la lingua di fallback quando la traduzione richiesta non è disponibile
      * 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> dc312f89 (.)
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
      * @return string|array<mixed>|int|null Il valore tradotto dell'attributo, o null se non disponibile
      */
     public function getTranslation(string $key, string $locale, bool $useFallbackLocale = true): string|array|int|null;
@@ -38,6 +44,7 @@ interface HasTranslationsContract
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param string                       $key    Il nome dell'attributo da tradurre
      * @param string                       $locale Il codice della lingua per cui impostare la traduzione
      * @param int|array<mixed>|string|null $value  Il valore da impostare per la traduzione
@@ -45,14 +52,19 @@ interface HasTranslationsContract
 =======
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
      * @param string $key Il nome dell'attributo da tradurre
      * @param string $locale Il codice della lingua per cui impostare la traduzione
      * @param int|array<mixed>|string|null $value Il valore da impostare per la traduzione
      * 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> dc312f89 (.)
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
      * @return self L'istanza corrente del modello, per supportare method chaining
      */
     public function setTranslation(string $key, string $locale, $value): self;

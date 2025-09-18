@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -13,6 +14,8 @@
 >>>>>>> aurmich/dev
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
 # Rapporto PHPStan Livello 7 per il modulo Lang
 
 Data analisi: 2025-04-15 22:02:20
@@ -48,6 +51,7 @@ Trovati 2 errori al livello 7.
 - [PSR-12: Standard di codifica](https://www.php-fig.org/psr/psr-12/)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 aurmich/dev
 =======
 <<<<<<< HEAD
@@ -61,3 +65,5 @@ aurmich/dev
 >>>>>>> aurmich/dev
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)

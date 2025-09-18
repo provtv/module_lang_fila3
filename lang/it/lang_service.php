@@ -6,6 +6,7 @@ return [
     'fields' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'language' => [
             'label' => 'Lingua',
             'placeholder' => 'Seleziona la lingua',
@@ -100,6 +101,8 @@ return [
 =======
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
         'created_at' => [
             'label' => 'Data di creazione',
             'placeholder' => 'Seleziona data',
@@ -358,7 +361,10 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> dc312f89 (.)
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
 ];

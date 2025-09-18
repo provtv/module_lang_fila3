@@ -20,6 +20,7 @@ quando viene utilizzata in Francia, verrà visualizzato il testo tradotto in fra
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Versione HEAD
 
 
@@ -41,3 +42,5 @@ quando viene utilizzata in Francia, verrà visualizzato il testo tradotto in fra
 >>>>>>> dc312f89 (.)
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)

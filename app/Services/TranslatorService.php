@@ -22,6 +22,7 @@ class TranslatorService extends LaravelTranslator
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param string      $key
 =======
      * @param string $key
@@ -29,11 +30,15 @@ class TranslatorService extends LaravelTranslator
 =======
      * @param string $key
 >>>>>>> c010b2b8 (.)
+=======
+     * @param string $key
+>>>>>>> 499a5da9 (.)
      * @param string|null $locale
      * @param bool        $fallback
      *
      * @return string|array
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function get(): void {
@@ -45,6 +50,10 @@ class TranslatorService extends LaravelTranslator
     public function get($key, array $replace = [], $locale = null, $fallback = true)
     {
 >>>>>>> c010b2b8 (.)
+=======
+    public function get($key, array $replace = [], $locale = null, $fallback = true)
+    {
+>>>>>>> 499a5da9 (.)
         // Get without fallback
         $result = parent::get($key, $replace, $locale, false);
         if ($result === $key) {
@@ -60,6 +69,7 @@ class TranslatorService extends LaravelTranslator
     /*
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function setTranslationManager(): void {
 =======
     public function setTranslationManager(Manager $manager)
@@ -69,6 +79,10 @@ class TranslatorService extends LaravelTranslator
     public function setTranslationManager(Manager $manager)
     {
 >>>>>>> c010b2b8 (.)
+=======
+    public function setTranslationManager(Manager $manager)
+    {
+>>>>>>> 499a5da9 (.)
         $this->manager = $manager;
     }
     */

@@ -10,12 +10,16 @@ use Modules\Lang\Datas\LangData;
 use Spatie\LaravelData\DataCollection;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Webmozart\Assert\Assert;
 >>>>>>> dc312f89 (.)
 =======
 use Webmozart\Assert\Assert;
 >>>>>>> c010b2b8 (.)
+=======
+use Webmozart\Assert\Assert;
+>>>>>>> 499a5da9 (.)
 
 /**
  * Classe per la composizione di dati relativi alle lingue nei template.
@@ -33,6 +37,7 @@ class ThemeComposer
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         // ✅ Controllo sicuro della configurazione laravellocalization
         $langs = config()->has('laravellocalization.supportedLocales') 
             ? config('laravellocalization.supportedLocales') 
@@ -43,6 +48,9 @@ class ThemeComposer
 =======
         $langs = config('laravellocalization.supportedLocales');
 >>>>>>> c010b2b8 (.)
+=======
+        $langs = config('laravellocalization.supportedLocales');
+>>>>>>> 499a5da9 (.)
 
         if (! is_array($langs)) {
             throw new \Exception(sprintf('Invalid config for supportedLocales on line %d in %s', __LINE__, class_basename($this)));
@@ -55,6 +63,7 @@ class ThemeComposer
             }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
             
@@ -62,6 +71,9 @@ class ThemeComposer
 =======
             
 >>>>>>> c010b2b8 (.)
+=======
+            
+>>>>>>> 499a5da9 (.)
             // Ensure $item has the required keys
             if (! isset($item['regional'], $item['name'])) {
                 throw new \InvalidArgumentException(sprintf('Expected array with "regional" and "name" keys at locale %s', $locale));
@@ -72,6 +84,7 @@ class ThemeComposer
             $regional = $item['regional'];
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (! is_string($regional)) {
 =======
             if (!is_string($regional)) {
@@ -79,10 +92,14 @@ class ThemeComposer
 =======
             if (!is_string($regional)) {
 >>>>>>> c010b2b8 (.)
+=======
+            if (!is_string($regional)) {
+>>>>>>> 499a5da9 (.)
                 $regional = '';
             }
             $regionalParts = explode('_', $regional);
             $regionalCode = $regionalParts[0] ?? 'en';
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -92,6 +109,9 @@ class ThemeComposer
 =======
             
 >>>>>>> c010b2b8 (.)
+=======
+            
+>>>>>>> 499a5da9 (.)
             if ('en' === $regionalCode) {
                 $regionalCode = 'gb';
             }
@@ -105,6 +125,7 @@ class ThemeComposer
             $name = $item['name'];
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (! is_string($name)) {
 =======
             if (!is_string($name)) {
@@ -112,6 +133,9 @@ class ThemeComposer
 =======
             if (!is_string($name)) {
 >>>>>>> c010b2b8 (.)
+=======
+            if (!is_string($name)) {
+>>>>>>> 499a5da9 (.)
                 $name = $locale; // Fallback al codice locale
             }
 
@@ -127,6 +151,7 @@ class ThemeComposer
         $languagesArray = $languages->values()->all();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
@@ -134,6 +159,9 @@ class ThemeComposer
 =======
         
 >>>>>>> c010b2b8 (.)
+=======
+        
+>>>>>>> 499a5da9 (.)
         return LangData::collection($languagesArray);
     }
 
@@ -163,6 +191,7 @@ class ThemeComposer
      * @throws \Exception if the current language is not found
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      * 
      * @return string
@@ -171,6 +200,10 @@ class ThemeComposer
      * 
      * @return string
 >>>>>>> c010b2b8 (.)
+=======
+     * 
+     * @return string
+>>>>>>> 499a5da9 (.)
      */
     public function currentLang(string $field): string
     {
@@ -189,6 +222,7 @@ class ThemeComposer
         $value = $lang->{$field};
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! is_string($value)) {
             return 'id' === $field ? $currentLocale : '';
         }
@@ -196,14 +230,19 @@ class ThemeComposer
 =======
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
         if (!is_string($value)) {
             return $field === 'id' ? $currentLocale : '';
         }
         
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> dc312f89 (.)
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
         return $value;
     }
 
@@ -211,6 +250,7 @@ class ThemeComposer
      * Build the URL for the admin panel based on the current route and parameters.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @param string $locale The locale code to build URL for
      *
@@ -222,6 +262,10 @@ class ThemeComposer
      * 
      * @param string $locale The locale code to build URL for
 >>>>>>> c010b2b8 (.)
+=======
+     * 
+     * @param string $locale The locale code to build URL for
+>>>>>>> 499a5da9 (.)
      * @return string The generated URL
      */
     private function buildAdminLanguageUrl(string $locale): string
@@ -242,6 +286,7 @@ class ThemeComposer
      * Build the HTML for the language flag.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @param string $regionalCode The regional code for the flag
      *
@@ -253,6 +298,10 @@ class ThemeComposer
      * 
      * @param string $regionalCode The regional code for the flag
 >>>>>>> c010b2b8 (.)
+=======
+     * 
+     * @param string $regionalCode The regional code for the flag
+>>>>>>> 499a5da9 (.)
      * @return string The HTML for the flag
      */
     private function buildFlagHtml(string $regionalCode): string

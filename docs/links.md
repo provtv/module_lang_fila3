@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Gestione delle Traduzioni in Laravel
 
 ## Pacchetti Raccomandati
@@ -38,6 +39,8 @@
 ### Formattazione Valuta
 ```php
 =======
+=======
+>>>>>>> 499a5da9 (.)
 If you need to translate just the text and want to build your own UI - Spatie package is a good choice.
 If you need to translate the routes - Mcamara package
 If you need to translate just the text but don't want to build your UI - You can use Nikaia package or MohmmedAshraf package
@@ -54,7 +57,10 @@ https://github.com/mcamara/laravel-localization
 https://github.com/MohmmedAshraf/laravel-translations
 
 ~~~php
+<<<<<<< HEAD
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
 if(! function_exists('formatCurrency')) {
     function formatCurrency($amount, $locale = 'en_US', $currency = 'USD')
     {
@@ -62,6 +68,7 @@ if(! function_exists('formatCurrency')) {
         return $formatter->formatCurrency($amount, $currency);
     }
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 ```
 
@@ -178,6 +185,8 @@ https://github.com/Astrotomic/laravel-translatable
 https://github.com/dimsav/laravel-translatable#step-1-install-package
 >>>>>>> dc312f89 (.)
 =======
+=======
+>>>>>>> 499a5da9 (.)
 ~~~
 
 file Http/Middleware/SetLocale.php
@@ -248,5 +257,8 @@ outhebox/laravel-translations
 
 
 
+<<<<<<< HEAD
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
 

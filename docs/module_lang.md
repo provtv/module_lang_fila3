@@ -7,6 +7,7 @@
 - **Repository**: https://github.com/laraxot/module_lang_fila3.git
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Collegamenti ai Moduli
 
 ### Moduli con Traduzioni
@@ -29,6 +30,8 @@
 
 =======
 >>>>>>> c010b2b8 (.)
+=======
+>>>>>>> 499a5da9 (.)
 ## Service Providers
 1. `Modules\Lang\Providers\LangServiceProvider`
 2. `Modules\Lang\Providers\Filament\AdminPanelProvider`
@@ -141,6 +144,7 @@ composer format        # Formatta il codice
 - Tutorial e esempi
 
 ## Changelog
+<<<<<<< HEAD
 <<<<<<< HEAD
 Le modifiche vengono tracciate nel repository GitHub.
 
@@ -293,3 +297,6 @@ $translation = Lang::get('patient.registration.label');
 =======
 Le modifiche vengono tracciate nel repository GitHub. 
 >>>>>>> c010b2b8 (.)
+=======
+Le modifiche vengono tracciate nel repository GitHub. 
+>>>>>>> 499a5da9 (.)

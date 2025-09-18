@@ -15,6 +15,7 @@ class Flag extends Component
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function __construct(): void {
 =======
     public function __construct(public string $name)
@@ -24,6 +25,10 @@ class Flag extends Component
     public function __construct(public string $name)
     {
 >>>>>>> c010b2b8 (.)
+=======
+    public function __construct(public string $name)
+    {
+>>>>>>> 499a5da9 (.)
     }
 
     public function render(): Renderable
