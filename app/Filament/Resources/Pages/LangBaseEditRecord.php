@@ -15,6 +15,7 @@ abstract class LangBaseEditRecord extends XotBaseEditRecord
 
     protected function getHeaderActions(): array
     {
+        /** @var array<string, \Filament\Actions\Action> */
         return [
             Actions\LocaleSwitcher::make(),
             ...parent::getHeaderActions(),

@@ -1,1 +1,1 @@
-{{-- Empty component view --}}
+Empty component view --}}

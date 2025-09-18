@@ -1,5 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
+
+
 namespace Modules\Lang\Filament\Resources;
 
 use Filament\Tables;
@@ -37,6 +41,7 @@ class TranslationFileResource extends XotBaseResource
 
     public static function getFormSchema(): array
     {
+        /** @var array<string, \Filament\Forms\Components\Component> */
        
         return [];
         /*

@@ -101,8 +101,7 @@ class Translation extends BaseModel
      *
      * @return string|null
 
-    public function getConnectionName()
-    {
+    public function getConnectionName(): void {
         if ($connection = config('translation-manager.db_connection')) {
             return $connection;
         }

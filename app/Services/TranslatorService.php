@@ -26,8 +26,7 @@ class TranslatorService extends LaravelTranslator
      *
      * @return string|array
      */
-    public function get($key, array $replace = [], $locale = null, $fallback = true)
-    {
+    public function get(): void {
         // Get without fallback
         $result = parent::get($key, $replace, $locale, false);
         if ($result === $key) {
@@ -41,8 +40,7 @@ class TranslatorService extends LaravelTranslator
     }
 
     /*
-    public function setTranslationManager(Manager $manager)
-    {
+    public function setTranslationManager(): void {
         $this->manager = $manager;
     }
     */

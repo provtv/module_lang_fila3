@@ -1,4 +1,4 @@
-@extends('lang::layouts.master')
+nds('lang::layouts.master')
 
 @section('content')
     <h1>Hello World</h1>

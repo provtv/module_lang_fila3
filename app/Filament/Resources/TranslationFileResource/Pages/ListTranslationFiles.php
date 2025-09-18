@@ -1,5 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
+
+
 namespace Modules\Lang\Filament\Resources\TranslationFileResource\Pages;
 
 use Filament\Actions;
@@ -15,6 +19,7 @@ class ListTranslationFiles extends XotBaseListRecords
 
     public function getTableColumns(): array
     {
+        /** @var array<string, \Filament\Tables\Columns\Column> */
         return [
             Columns\TextColumn::make('key')
                ->searchable(['key','content']),
@@ -27,6 +32,7 @@ class ListTranslationFiles extends XotBaseListRecords
      */
     protected function getHeaderActions(): array
     {
+        /** @var array<string, \Filament\Actions\Action> */
         $parentActions = parent::getHeaderActions();
         
         // Assicurarsi che tutte le azioni abbiano chiavi stringa

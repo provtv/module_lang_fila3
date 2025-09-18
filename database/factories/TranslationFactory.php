@@ -25,8 +25,7 @@ class TranslationFactory extends Factory
      *
      * @return array
      */
-    public function definition()
-    {
+    public function definition(): void {
         return [
             'id' => fake()->randomNumber(5),
             'lang' => fake()->word,

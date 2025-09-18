@@ -101,7 +101,7 @@ class Post extends Model
     use Updater;
 
     /*
-    public function getUrlAttribute($value) {
+    public function getUrlAttribute(): void {
 
     }
     */
@@ -154,7 +154,7 @@ class Post extends Model
     protected $keyType = 'string';
 
     /*
-    public function getRouteKeyName() {
+    public function getRouteKeyName(): void {
         return inAdmin() ? 'guid' : 'post_id';
     }
     */
@@ -173,13 +173,12 @@ class Post extends Model
     /**
      * @return MorphTo
      */
-    public function linkable()
-    {
+    public function linkable(): void {
         return $this->morphTo('post');
     }
 
     /* deprecated
-    public function archive() {
+    public function archive(): void {
         $lang = $this->lang;
         $post_type = $this->post_type;
         $obj = $this->getLinkedModel();
@@ -271,8 +270,7 @@ class Post extends Model
     /**
      * @return array
      */
-    public function toSearchableArray()
-    {
+    public function toSearchableArray(): void {
         return $this->only(self::SEARCHABLE_FIELDS);
     }
 

@@ -1,5 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
+
+
 namespace Modules\Lang\Filament\Resources\TranslationFileResource\Pages;
 
 use Filament\Actions;
@@ -18,6 +22,7 @@ class EditTranslationFile extends XotBaseEditRecord
 
     protected function getHeaderActions(): array
     {
+        /** @var array<string, \Filament\Actions\Action> */
         return [
             LocaleSwitcherRefresh::make('lang'),
             ...parent::getHeaderActions(),
@@ -28,7 +33,7 @@ class EditTranslationFile extends XotBaseEditRecord
     /**
      * @return array<string>
      */
-    public function getTranslatableLocales(){
+    public function getTranslatableLocales(): array {
         return ['it', 'en'];
     }
    

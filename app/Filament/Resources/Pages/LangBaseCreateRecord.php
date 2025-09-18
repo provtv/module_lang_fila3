@@ -25,6 +25,7 @@ abstract class LangBaseCreateRecord extends XotBaseCreateRecord
 
     protected function getHeaderActions(): array
     {
+        /** @var array<string, \Filament\Actions\Action> */
         return [
             Actions\LocaleSwitcher::make(),
             ...parent::getHeaderActions(),

@@ -33,8 +33,7 @@ class AutoLabelAction
      *
      * @return Field|BaseFilter|Column|Step|Action|TableAction|FormsSection
      */
-    public function execute($component,string $type = 'label')
-    {
+    public function execute() {
         $backtrace = debug_backtrace();
         $backtrace_slice = array_slice($backtrace, 2);
         $class = Arr::first($backtrace_slice, function ($item) use($component){

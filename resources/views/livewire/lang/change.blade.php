@@ -1,4 +1,4 @@
-<div x-data="{ open: false }">
+x-data="{ open: false }">
     <button
         @click="open = !open"
         @click.away="open = false"

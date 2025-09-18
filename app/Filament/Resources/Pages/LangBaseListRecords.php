@@ -22,6 +22,7 @@ abstract class LangBaseListRecords extends XotBaseListRecords
      */
     protected function getHeaderActions(): array
     {
+        /** @var array<string, \Filament\Actions\Action> */
         $parentActions = parent::getHeaderActions();
         
         // Assicurarsi che tutte le azioni abbiano chiavi stringa

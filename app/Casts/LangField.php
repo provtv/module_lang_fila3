@@ -16,8 +16,7 @@ class LangField implements CastsAttributes
      * @param string        $key
      * @param array         $attributes
      */
-    public function get($model, $key, $value, $attributes)
-    {
+    public function get(): void {
         return $model->post->{$key};
     }
 

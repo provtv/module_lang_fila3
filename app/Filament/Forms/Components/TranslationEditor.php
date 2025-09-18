@@ -1,5 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
+
+
 // app/Filament/Components/TranslationEditor.php
 namespace Modules\Lang\Filament\Forms\Components;
 

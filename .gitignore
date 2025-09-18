@@ -35,6 +35,8 @@ cache/
 *.swo
 *.stackdump
 *:Zone.Identifier
+*.Identifier
+*.to_* 
 v8-compile-cache-*
 .php-cs-fixer.cache
 .phpunit.result.cache
