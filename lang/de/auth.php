@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     /*
     |--------------------------------------------------------------------------
     | Authentication Language Lines
@@ -89,4 +90,13 @@ return [
         'settings' => 'Einstellungen',
         'logout' => 'Abmelden',
     ],
+=======
+    'failed' => 'Zugangsdaten nicht gefunden.',
+    'general_error' => 'Du hast keine Berechtigung um dies zu machen.',
+    'socialite' => [
+        'unacceptable' => ':provider ist kein akzeptierter Logintyp.',
+    ],
+    'throttle' => 'Zuviele Login versuche. Bitte warte :seconds Sekunden.',
+    'unknown' => 'Ein unbekannter Fehler ist aufgetreten',
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 ];

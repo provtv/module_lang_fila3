@@ -25,7 +25,14 @@ jobs:
           coverage: none
 
       - name: Install composer dependencies
+<<<<<<< HEAD
         uses: ramsey/composer-install@v2
+=======
+        uses: ramsey/composer-install@latest
+
+      - name: Install Services composer dependencies
+        run: cd Services && composer install --no-progress --no-suggest
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 
       - name: Run PHPStan
         run: ./vendor/bin/phpstan --error-format=github

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Rapporto PHPStan Livello max per il modulo Lang
 
 Data analisi: 2025-04-15 22:02:38
@@ -11,6 +12,21 @@ Trovati 3 errori al livello max.
 ### File: `/var/www/html/saluteora/laravel/Modules/Lang/app/Actions/GetTransPathAction.php`
 
 #### Linea 39: Parameter #2 $path of function module_path expects string, mixed given.
+=======
+# Rapporto PHPStan Livello max per il modulo Xot
+
+Data analisi: 2025-04-15 21:56:24
+
+## Riepilogo
+
+Trovati 4 errori al livello max.
+
+## Errori e suggerimenti
+
+### File: `/var/www/html/saluteora/laravel/Modules/Xot/app/Actions/Export/ExportXlsByView.php`
+
+#### Linea 40: Syntax error, unexpected T_SR on line 40
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 
 **Suggerimento generale**: Rivedi il codice per assicurarti che:
 - Tutte le classi/interfacce utilizzate siano importate correttamente
@@ -18,9 +34,13 @@ Trovati 3 errori al livello max.
 - Le variabili siano inizializzate prima dell'uso
 - I nomi di metodi e proprietà siano corretti
 
+<<<<<<< HEAD
 ### File: `/var/www/html/saluteora/laravel/Modules/Lang/app/Models/Post.php`
 
 #### Linea 101: Class Modules\Lang\Models\Post uses unknown trait GeneaLabs\LaravelModelCaching\Traits\Cachable.
+=======
+#### Linea 41: Syntax error, unexpected '}' on line 41
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 
 **Suggerimento generale**: Rivedi il codice per assicurarti che:
 - Tutte le classi/interfacce utilizzate siano importate correttamente
@@ -28,7 +48,21 @@ Trovati 3 errori al livello max.
 - Le variabili siano inizializzate prima dell'uso
 - I nomi di metodi e proprietà siano corretti
 
+<<<<<<< HEAD
 #### Linea 160: PHPDoc type array<int, string> of property Modules\Lang\Models\Post::$appends is not covariant with PHPDoc type list<string> of overridden property Illuminate\Database\Eloquent\Model::$appends.
+=======
+### File: `/var/www/html/saluteora/laravel/Modules/Xot/app/Actions/View/GetViewByClassAction.php`
+
+#### Linea 47: Syntax error, unexpected T_SR on line 47
+
+**Suggerimento generale**: Rivedi il codice per assicurarti che:
+- Tutte le classi/interfacce utilizzate siano importate correttamente
+- I tipi siano dichiarati e utilizzati in modo coerente
+- Le variabili siano inizializzate prima dell'uso
+- I nomi di metodi e proprietà siano corretti
+
+#### Linea 48: Syntax error, unexpected '}' on line 48
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 
 **Suggerimento generale**: Rivedi il codice per assicurarti che:
 - Tutte le classi/interfacce utilizzate siano importate correttamente

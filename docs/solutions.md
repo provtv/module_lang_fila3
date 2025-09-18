@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 # Soluzioni Tecniche - Modulo Xot
 
 ## Problemi Identificati e Soluzioni
@@ -92,6 +95,7 @@ trait HasXotTable {
     public function scopeOptimized($query) {
         return $query->with($this->getDefaultEagerLoads())
                     ->useIndex($this->getOptimalIndex());
+<<<<<<< HEAD
 
 # Soluzioni Tecniche - Modulo GDPR
 
@@ -160,11 +164,16 @@ class ProcessUserAnonymization implements ShouldQueue {
             // Altri campi da anonimizzare
         ]);
  ecd8d46956 (Squashed 'laravel/Modules/Gdpr/' content from commit d30cea3b2)
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
     }
 }
 ```
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 ### 2. File Processing
 ```php
 // In: Modules/Xot/Jobs/ProcessFileUpload.php
@@ -209,6 +218,7 @@ class PerformanceMonitor {
         ]);
 
         return $response;
+<<<<<<< HEAD
 
 # Soluzioni Tecniche - Modulo Job
 
@@ -257,11 +267,16 @@ class ProcessJobAction {
             ->onQueue('low')
             ->delay(now()->addMinutes(5));
  90bf7d5b85 (Squashed 'laravel/Modules/Job/' content from commit d3ea5c83e)
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
     }
 }
 ```
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 ### 2. Query Logging
 ```php
 // In: Modules/Xot/Providers/QueryLogServiceProvider.php
@@ -273,6 +288,7 @@ class QueryLogServiceProvider extends ServiceProvider {
                     'sql' => $query->sql,
                     'time' => $query->time,
                     'bindings' => $query->bindings
+<<<<<<< HEAD
 
 ### 2. Monitoraggio Job (`Modules/Job/Services/JobMonitoringService.php`)
 ```php
@@ -592,12 +608,20 @@ class ComplianceMonitor {
             })
             ->count();
  ecd8d46956 (Squashed 'laravel/Modules/Gdpr/' content from commit d30cea3b2)
+=======
+                ]);
+            }
+        });
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
     }
 }
 ```
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 ## Best Practices Implementative
 
 ### 1. Dependency Injection
@@ -642,6 +666,7 @@ class XotConfig {
             cacheTTL: config('xot.cache.ttl'),
             optimizedTables: config('xot.db.optimized_tables')
         );
+<<<<<<< HEAD
 
 ### 2. Job Health Check
 ```php
@@ -679,14 +704,19 @@ class AuditService {
             'timestamp' => now()
         ]);
  ecd8d46956 (Squashed 'laravel/Modules/Gdpr/' content from commit d30cea3b2)
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
     }
 }
 ```
 
 ## Testing
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 ### 1. Unit Tests
 ```php
 // In: Modules/Xot/Tests/Unit/QueryBuilderTest.php
@@ -697,6 +727,7 @@ class QueryBuilderTest extends TestCase {
         
         $this->assertQueryUsesIndex($query, 'users_index');
         $this->assertQueryHasEagerLoading($query, ['posts']);
+<<<<<<< HEAD
 
 ### 1. Job Processing Tests
 ```php
@@ -734,12 +765,17 @@ class ConsentComplianceTest extends TestCase {
             'User should be compliant after adding required consents'
         );
  ecd8d46956 (Squashed 'laravel/Modules/Gdpr/' content from commit d30cea3b2)
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
     }
 }
 ```
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 ### 2. Performance Tests
 ```php
 // In: Modules/Xot/Tests/Performance/CacheTest.php
@@ -751,6 +787,7 @@ class CacheTest extends TestCase {
         
         $duration = microtime(true) - $start;
         $this->assertLessThan(0.1, $duration);
+<<<<<<< HEAD
 
 ### 2. Retry Tests
 ```php
@@ -785,18 +822,24 @@ class AnonymizationTest extends TestCase {
         $this->assertEquals('Anonymous User', $user->name);
         $this->assertNull($user->phone);
  ecd8d46956 (Squashed 'laravel/Modules/Gdpr/' content from commit d30cea3b2)
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
     }
 }
 ```
 
 ## Note di Implementazione
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 1. Tutte le modifiche devono essere testate in ambiente di staging
 2. Implementare gradualmente partendo dalle priorità più alte
 3. Monitorare costantemente le metriche di performance
 4. Aggiornare la documentazione per ogni modifica
+<<<<<<< HEAD
 5. Mantenere compatibilità con le versioni precedenti 
 
 1. Priorità di Intervento:
@@ -836,3 +879,6 @@ class AnonymizationTest extends TestCase {
    - Aggiornamento policy
    - Review sicurezza 
  ecd8d46956 (Squashed 'laravel/Modules/Gdpr/' content from commit d30cea3b2)
+=======
+5. Mantenere compatibilità con le versioni precedenti 
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)

@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 nds('lang::layouts.master')
 =======
 @extends('lang::layouts.master')
@@ -11,11 +12,20 @@ nds('lang::layouts.master')
 =======
 @extends('lang::layouts.master')
 >>>>>>> 499a5da9 (.)
+=======
+@extends('xot::layouts.app')
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 
 @section('content')
     <h1>Hello World</h1>
 
     <p>
+<<<<<<< HEAD
         This view is loaded from module: {!! config('lang.name') !!}
     </p>
 @endsection
+=======
+        This view is loaded from module: {!! config('xot.name') !!}
+    </p>
+@stop
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)

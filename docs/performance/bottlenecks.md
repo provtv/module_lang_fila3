@@ -1,9 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 # Performance Bottlenecks Analysis
 
 ## Query Bottlenecks
@@ -205,6 +208,7 @@ public function exportData()
     })->chunk(1000);
 }
 ```
+<<<<<<< HEAD
 
 # Job Module Performance Bottlenecks
 
@@ -1046,3 +1050,5 @@ Implementare:
 =======
  c1120baae0 (Squashed 'laravel/Modules/Lang/' content from commit 693742e073)
 >>>>>>> 688d0704 (first)
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)

@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "name": "Lang",
     "alias": "Lang",
     "description": "label language",
@@ -9,8 +10,24 @@
     "providers": [
         "Modules\\Lang\\Providers\\LangServiceProvider",
         "Modules\\Lang\\Providers\\Filament\\AdminPanelProvider"
+=======
+    "name": "Xot",
+    "alias": "xot",
+    "description": "",
+    "keywords": [],
+    "priority": 2,
+    "active": 1,
+    "order": 2,
+    "providers": [
+        "Modules\\Xot\\Providers\\XotServiceProvider",
+        "Modules\\Xot\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
     ],
     "aliases": [],
     "files": [],
     "requires": []
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)

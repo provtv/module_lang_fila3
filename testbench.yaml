@@ -1,2 +1,8 @@
 providers:
+<<<<<<< HEAD
   - Modules\Lang\Providers\LangServiceProvider
+=======
+  - Modules\Xot\Providers\XotServiceProvider
+  - Modules\Xot\Providers\Filament\AdminPanelProvider
+  - Nwidart\Modules\LaravelModulesServiceProvider
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)

@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Traduzioni nel Progetto
 
 ## Regole Fondamentali
@@ -52,6 +53,8 @@ return [
             'tooltip' => 'Salva le modifiche',
             'confirmation' => 'Sei sicuro di voler salvare?',
 =======
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 # Sistema di Traduzioni
 
 ## Struttura
@@ -97,12 +100,16 @@ return [
                 'view' => 'Visualizza',
                 // ...
             ],
+<<<<<<< HEAD
 >>>>>>> 688d0704 (first)
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
         ],
     ],
 ];
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ## Gestione Automatica delle Traduzioni
 
@@ -243,6 +250,8 @@ Prima di committare:
 - [Guida Traduzioni](https://laravel.com/docs/10.x/localization#using-translation-strings-as-keys) 
 >>>>>>> dc312f89 (.)
 =======
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 ## Utilizzo
 
 ### In Filament Resources
@@ -378,5 +387,9 @@ TextInput::make('cognome')
 // Utilizzo in Actions
 Action::make('save')
 Action::make('delete')
+<<<<<<< HEAD
 ``` 
 >>>>>>> 688d0704 (first)
+=======
+``` 
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)

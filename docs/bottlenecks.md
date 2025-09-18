@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Analisi Bottlenecks Modulo Lang
 
 ## Performance
@@ -154,6 +155,8 @@
 * [bottlenecks.md](../../Cms/docs/bottlenecks.md)
 
 =======
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 # Analisi dei Colli di Bottiglia - Modulo Xot
 
 ## Performance Critiche
@@ -277,5 +280,9 @@
 ### Lungo Termine
 1. Implementare microservizi per operazioni pesanti
 2. Ottimizzare l'architettura per scalabilità
+<<<<<<< HEAD
 3. Migliorare la gestione delle risorse distribuite 
 >>>>>>> 688d0704 (first)
+=======
+3. Migliorare la gestione delle risorse distribuite 
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)

@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 
@@ -13,6 +14,8 @@ declare(strict_types=1);
 >>>>>>> c010b2b8 (.)
 =======
 >>>>>>> 499a5da9 (.)
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 $finder = PhpCsFixer\Finder::create()
     ->notPath('bootstrap/cache')
     ->notPath('storage')
@@ -25,6 +28,7 @@ $finder = PhpCsFixer\Finder::create()
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ;
 =======
 >>>>>>> dc312f89 (.)
@@ -32,6 +36,8 @@ $finder = PhpCsFixer\Finder::create()
 >>>>>>> c010b2b8 (.)
 =======
 >>>>>>> 499a5da9 (.)
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 
 $config = new PhpCsFixer\Config();
 
@@ -62,6 +68,7 @@ $config
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ;
 =======
 >>>>>>> dc312f89 (.)
@@ -69,5 +76,7 @@ $config
 >>>>>>> c010b2b8 (.)
 =======
 >>>>>>> 499a5da9 (.)
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 
 return $config;

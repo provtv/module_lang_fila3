@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'delete' => [
         'label' => 'Elimina',
         'tooltip' => 'Elimina l\'elemento selezionato',
@@ -57,4 +58,7 @@ return [
         'icon' => 'heroicon-o-plus-circle',
         'color' => 'success',
     ],
+=======
+    'export_xls' => 'Esporta Dati',
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 ];

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 version: 2
 updates:
   - package-ecosystem: "composer"
@@ -20,6 +23,7 @@ updates:
     labels:
       - "npm"
       - "dependencies"
+<<<<<<< HEAD
 =======
 # To get started with Dependabot version updates, you'll need to specify which
 # package ecosystems to update and where the package manifests are located.
@@ -34,3 +38,5 @@ updates:
    schedule:
      interval: weekly
 >>>>>>> 688d0704 (first)
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)

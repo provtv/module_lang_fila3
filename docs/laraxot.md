@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -3515,6 +3516,8 @@ Modules/
   - Feedback section
   - Contact section 
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 # Laravel XOT Architecture Documentation
 
 ## Overview
@@ -3936,7 +3939,11 @@ class GeoLogger
             ->info('Geocoding request', [
                 'address' => $address,
                 'success' => $result !== null,
+<<<<<<< HEAD
                 'coordinates' => $result?->toArray()
+=======
+                'coordinates' => $result->toArray()
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
             ]);
     }
 
@@ -4070,7 +4077,11 @@ class ModuleList extends Component
     
     public function delete(int $id): void
     {
+<<<<<<< HEAD
         Module::find($id)?->delete();
+=======
+        Module::find($id)->delete();
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
         $this->emit('moduleDeleted');
     }
 }
@@ -4362,7 +4373,11 @@ class ClientMapWidget extends Widget
     protected function getViewData(): array
     {
         return [
+<<<<<<< HEAD
             'clients' => $this->listClients?->getTableQuery()
+=======
+            'clients' => $this->listClients->getTableQuery()
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
                 ->get(['latitude', 'longitude', 'name'])
                 ->toArray(),
         ];
@@ -4408,7 +4423,11 @@ class ClientMapWidget extends Widget
     protected function getViewData(): array
     {
         return [
+<<<<<<< HEAD
             'clients' => $this->listClients?->getTableQuery()
+=======
+            'clients' => $this->listClients->getTableQuery()
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
                 ->get(['latitude', 'longitude', 'name'])
                 ->toArray(),
         ];
@@ -5161,6 +5180,7 @@ return [
 ✅ **USARE** invece:
 - Un file di traduzione dedicato per ogni componente
 - Struttura standardizzata con chiave 'navigation'
+<<<<<<< HEAD
 - Definizione completa di gruppo, label, icona e ordinamento 
 
 
@@ -5169,6 +5189,9 @@ return [
 
  e62e17c257 (up)
  master
+=======
+- Definizione completa di gruppo, label, icona e ordinamento
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 # Laraxot Framework
 
 ## Panoramica
@@ -5227,6 +5250,7 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class UserResource extends XotBaseResource
 {
+<<<<<<< HEAD
 
     protected function getListTableColumns(): array
 
@@ -5236,6 +5260,9 @@ class UserResource extends XotBaseResource
     protected function getListTableColumns(): array
  e62e17c257 (up)
  master
+=======
+    public function getListTableColumns(): array
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
     {
         return [
             // definizione delle colonne
@@ -5486,9 +5513,12 @@ $query = sprintf('%s.%s', (string)$table, (string)$column);
 
 ## PHPStan Analisi Moduli
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 ### Validazione a Livello 7
 
 A partire dal 10 Marzo 2025, tutti i moduli devono essere validati con PHPStan a livello 7. Questo livello di analisi statica garantisce:
@@ -5532,6 +5562,7 @@ Il file di configurazione principale (`phpstan.neon`) è già impostato per il l
 - **Gdpr**: Validato a livello 7
 - **User**: Validato a livello 7
 
+<<<<<<< HEAD
  master
 Risultati dell'ultima analisi per modulo:
 - **Xot**: Risolti tutti gli errori critici
@@ -5544,6 +5575,8 @@ Risultati dell'ultima analisi per modulo:
  e62e17c257 (up)
  master
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 ## Ottimizzazioni Recenti
 
 ### Type Safety
@@ -5596,6 +5629,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
 #### Array Keys nelle Table Columns
 ```php
 // ERRATO: Array numerico
+<<<<<<< HEAD
 
 protected function getListTableColumns(): array
 
@@ -5605,6 +5639,9 @@ public function getListTableColumns(): array
 protected function getListTableColumns(): array
  e62e17c257 (up)
  master
+=======
+public function getListTableColumns(): array
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 {
     return [
         TextColumn::make('name'),
@@ -7645,9 +7682,12 @@ In Laraxot, non si estendono mai direttamente le classi Filament. Invece, si uti
 ```php
 // ❌ ERRATO
 use Filament\Resources\Resource;
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 class MyResource extends \Modules\Xot\Filament\Resources\XotBaseResource
 
 // ✅ CORRETTO
@@ -10348,9 +10388,12 @@ In Laraxot, non si estendono mai direttamente le classi Filament. Invece, si uti
 ```php
 // ❌ ERRATO
 use Filament\Resources\Resource;
+<<<<<<< HEAD
 
  e62e17c257 (up)
  master
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 class MyResource extends Resource
 
 // ✅ CORRETTO
@@ -10561,6 +10604,7 @@ protected function getTableActions(): array
 protected function getTableBulkActions(): array
 
 // ✅ CORRETTO: Metodi di XotBaseListRecords
+<<<<<<< HEAD
 
 protected function getListTableColumns(): array
 
@@ -10570,6 +10614,9 @@ public function getListTableColumns(): array
 protected function getListTableColumns(): array
  e62e17c257 (up)
  master
+=======
+public function getListTableColumns(): array
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 protected function getListTableFilters(): array
 protected function getListTableActions(): array
 protected function getListTableBulkActions(): array
@@ -10579,6 +10626,7 @@ protected function getListTableBulkActions(): array
 ```php
 class ListTickets extends XotBaseListRecords
 {
+<<<<<<< HEAD
 
     protected function getListTableColumns(): array
 
@@ -10588,6 +10636,9 @@ class ListTickets extends XotBaseListRecords
     protected function getListTableColumns(): array
  e62e17c257 (up)
  master
+=======
+    public function getListTableColumns(): array
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
     {
         return [
             TextColumn::make('id')->sortable(),
@@ -10614,6 +10665,7 @@ class ListTickets extends XotBaseListRecords
  *
  * @return array<int, Column>
  */
+<<<<<<< HEAD
 
 protected function getListTableColumns(): array
 
@@ -10624,6 +10676,10 @@ protected function getListTableColumns(): array
  e62e17c257 (up)
  master
 
+=======
+public function getListTableColumns(): array
+
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 /**
  * Get the table filters for the list view.
  *
@@ -10654,6 +10710,7 @@ protected function getListTableBulkActions(): array
 1. **Nomenclatura**:
    ```php
    // ✅ CORRETTO: Usa sempre il prefisso "List"
+<<<<<<< HEAD
 
    protected function getListTableColumns(): array
 
@@ -10663,6 +10720,9 @@ protected function getListTableBulkActions(): array
    protected function getListTableColumns(): array
  e62e17c257 (up)
  master
+=======
+   public function getListTableColumns(): array
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
    
    // ❌ ERRATO: Non usare i metodi standard di Filament
    protected function getTableColumns(): array
@@ -10673,6 +10733,7 @@ protected function getListTableBulkActions(): array
    /**
     * @return array<int, Column>
     */
+<<<<<<< HEAD
 
    protected function getListTableColumns(): array
 
@@ -10682,6 +10743,9 @@ protected function getListTableBulkActions(): array
    protected function getListTableColumns(): array
  e62e17c257 (up)
  master
+=======
+   public function getListTableColumns(): array
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
    {
        return [
            TextColumn::make('id')->sortable(),
@@ -10696,6 +10760,7 @@ protected function getListTableBulkActions(): array
     *
     * @return array<int, \Filament\Tables\Columns\Column>
     */
+<<<<<<< HEAD
 
    protected function getListTableColumns(): array
 
@@ -10705,6 +10770,9 @@ protected function getListTableBulkActions(): array
    protected function getListTableColumns(): array
  e62e17c257 (up)
  master
+=======
+   public function getListTableColumns(): array
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
    ```
 
 ## Note Importanti
@@ -10861,6 +10929,7 @@ Quando si estende una classe base, i metodi sovrascritti devono mantenere lo ste
 ### 1. Metodi della Tabella
 ```php
 // ❌ ERRATO: Livello di accesso più restrittivo
+<<<<<<< HEAD
 
 protected function getListTableColumns(): array
 
@@ -10871,6 +10940,10 @@ protected function getListTableColumns(): array
  e62e17c257 (up)
  master
 
+=======
+public function getListTableColumns(): array
+
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 // ✅ CORRETTO: Stesso livello di accesso della classe padre
 public function getListTableColumns(): array
 ```
@@ -10889,6 +10962,7 @@ class ListTickets extends XotBaseListRecords
     }
 
     // ❌ ERRATO: protected è più restrittivo
+<<<<<<< HEAD
 
     protected function getListTableColumns(): array
 
@@ -10898,6 +10972,9 @@ class ListTickets extends XotBaseListRecords
     protected function getListTableColumns(): array
  e62e17c257 (up)
  master
+=======
+    public function getListTableColumns(): array
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
     {
         // ...
     }
@@ -10914,6 +10991,7 @@ public function getListTableColumns(): array
 // ❌ ERRATO: Non puoi restringere l'accesso
 class MyListRecords extends XotBaseListRecords
 {
+<<<<<<< HEAD
 
     protected function getListTableColumns(): array  // Errore!
 
@@ -10923,6 +11001,9 @@ class MyListRecords extends XotBaseListRecords
     protected function getListTableColumns(): array  // Errore!
  e62e17c257 (up)
  master
+=======
+    public function getListTableColumns(): array  // Errore!
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
     {
         // ...
     }
@@ -11526,10 +11607,13 @@ Modules/
   - Title section
   - Content area
   - Feedback section
+<<<<<<< HEAD
 
   - Contact section 
 
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
   - Contact section 
 
 ## Configurazione Moduli
@@ -12452,9 +12536,13 @@ class ClientMapWidget extends Widget
 3. Implementare sempre controlli di tipo
 4. Gestire i casi di errore in modo graceful
 5. La reattività funziona automaticamente con Livewire 3
+<<<<<<< HEAD
   - Contact section 
  87dbba6623 (Squashed 'laravel/Modules/Xot/' content from commit 5fa619c8)
 
   - Contact section 
  e62e17c257 (up)
  master
+=======
+  - Contact section
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)

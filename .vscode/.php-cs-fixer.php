@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 
@@ -18,6 +19,8 @@ declare(strict_types=1);
 declare(strict_types=1);
 
 >>>>>>> 688d0704 (first)
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 $finder = PhpCsFixer\Finder::create()
     ->notPath('bootstrap/cache')
     ->notPath('storage')
@@ -26,6 +29,7 @@ $finder = PhpCsFixer\Finder::create()
     ->name('*.php')
     ->notName('*.blade.php')
     ->ignoreDotFiles(true)
+<<<<<<< HEAD
 <<<<<<< HEAD
     ->ignoreVCS(true)
 <<<<<<< HEAD
@@ -41,6 +45,9 @@ $finder = PhpCsFixer\Finder::create()
 =======
     ->ignoreVCS(true);
 >>>>>>> 688d0704 (first)
+=======
+    ->ignoreVCS(true)
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 
 $config = new PhpCsFixer\Config();
 
@@ -53,10 +60,14 @@ $config
         'declare_strict_types' => true,
         'combine_consecutive_unsets' => true,
 <<<<<<< HEAD
+<<<<<<< HEAD
         //'binary_operator_spaces' => ['align_double_arrow' => false],
 =======
         // 'binary_operator_spaces' => ['align_double_arrow' => false],
 >>>>>>> 688d0704 (first)
+=======
+        //'binary_operator_spaces' => ['align_double_arrow' => false],
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
         'array_syntax' => ['syntax' => 'short'],
         'linebreak_after_opening_tag' => true,
         'not_operator_with_successor_space' => true,
@@ -71,6 +82,7 @@ $config
         'class_definition' => true,
         'elseif' => true,
     ])
+<<<<<<< HEAD
 <<<<<<< HEAD
     ->setFinder($finder)
 <<<<<<< HEAD
@@ -90,3 +102,8 @@ return $config;
 
 return $config;
 >>>>>>> 688d0704 (first)
+=======
+    ->setFinder($finder)
+
+return $config;
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)

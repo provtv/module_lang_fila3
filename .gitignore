@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ==============================================
 # LARAXOT MODULE LANG - .GITIGNORE
 # ==============================================
@@ -222,12 +223,47 @@ package-lock.json
 node_modules
 /node_modules
 vendor/
+=======
+*.jar
+*.log
+*.lock
+package-lock.json
+*.phar
+.git-rewrite
+.php-cs-fixer.cache
+package-lock.json
+vendor/
+node_modules/
+.env
+/.vagrant
+.phpunit.result.cache
+.DS_Store
+error_log
+.phpintel
+/.idea
+
+*.lock
+package-lock.json
+*.stackdump
+*.cache
+/build
+.git-blame-ignore-revs
+.git-rewrite
+.php-cs-fixer.cache
+*.phar
+.git-rewrite/
+
+node_modules
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 .git-blame-ignore-revs
 .git-blame-ignore-revs
 node_modules
 vendor
+<<<<<<< HEAD
 >>>>>>> 0fcceb64 (Squashed 'bashscripts/' content from commit 38660fd8)
 .php-cs-fixer.cache
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 .git-blame-ignore-revs
 build/
 vendor/
@@ -235,6 +271,7 @@ build/
 node_modules
 docs/cache/
 cache/
+<<<<<<< HEAD
 <<<<<<< HEAD
 *.exe
 
@@ -383,3 +420,8 @@ laravel/storage/framework/sessions/*
 .php-cs-fixer.cache
 **/*.Zone.Identifier
 >>>>>>> 0fcceb64 (Squashed 'bashscripts/' content from commit 38660fd8)
+=======
+.git-blame-ignore-revs
+.php-cs-fixer.cache
+*.exe
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)

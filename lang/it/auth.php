@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
 
 return [
@@ -91,4 +92,14 @@ return [
         'settings' => 'Impostazioni',
         'logout' => 'Disconnetti',
     ],
+=======
+return [
+    'failed' => 'Le credenziali non corrispondono a quelle registrate!',
+    'general_error' => 'Non hai diritti sufficienti per questa operazione.',
+    'socialite' => [
+        'unacceptable' => ':provider non è supportato.',
+    ],
+    'throttle' => 'Troppi tentativi di login. Si prega di riprovare tra :seconds secondi.',
+    'unknown' => 'Si è verificato un errore sconosciuto',
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 ];

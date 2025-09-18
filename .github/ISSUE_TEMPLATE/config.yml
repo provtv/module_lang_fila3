@@ -1,6 +1,7 @@
 blank_issues_enabled: false
 contact_links:
     - name: Ask a question
+<<<<<<< HEAD
       url: https://github.com/laraxot/module_lang/discussions/new?category=q-a
       about: Ask the community for help
     - name: Request a feature
@@ -8,4 +9,13 @@ contact_links:
       about: Share ideas for new features
     - name: Report a bug
       url: https://github.com/laraxot/module_lang/issues/new
+=======
+      url: https://github.com/laraxot/module_xot/discussions/new?category=q-a
+      about: Ask the community for help
+    - name: Request a feature
+      url: https://github.com/laraxot/module_xot/discussions/new?category=ideas
+      about: Share ideas for new features
+    - name: Report a bug
+      url: https://github.com/laraxot/module_xot/issues/new
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
       about: Report a reproducable bug

@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Lang\Providers\Filament;
 
 <<<<<<< HEAD
@@ -49,4 +50,11 @@ class AdminPanelProvider extends XotBasePanelProvider
 >>>>>>> c010b2b8 (.)
 =======
 >>>>>>> 499a5da9 (.)
+=======
+namespace Modules\Xot\Providers\Filament;
+
+class AdminPanelProvider extends XotBasePanelProvider
+{
+    protected string $module = 'Xot';
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 }

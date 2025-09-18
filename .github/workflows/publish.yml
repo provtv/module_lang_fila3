@@ -30,10 +30,17 @@ jobs:
       run: cd docs && npm run prod
 
     - name: CNAME
+<<<<<<< HEAD
       run: cd docs && echo "laraxot.github.io/module_lang" > ./build_production/CNAME
 
     - name: gh-pages
       uses: JamesIves/github-pages-deploy-action@v4.5
+=======
+      run: cd docs && echo "laraxot.github.io/module_xot_fila3" > ./build_production/CNAME
+
+    - name: gh-pages
+      uses: JamesIves/github-pages-deploy-action@latest
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
       with:
         branch: gh-pages
         folder: ./docs/build_production

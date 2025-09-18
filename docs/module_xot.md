@@ -78,9 +78,12 @@ composer format        # Formatta il codice
 5. Seguire i principi SOLID
 6. Utilizzare i type-safe di thecodingmachine/safe
 7. Implementare health checks
+<<<<<<< HEAD
 8. Utilizzare sempre i metodi getter appropriati invece di accedere direttamente alle proprietà
 9. Seguire le convenzioni di naming per mantenere la coerenza del codice
 10. Documentare tutti i cambiamenti nei file appropriati nella cartella docs
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 
 ## Troubleshooting
 ### Problemi Comuni
@@ -99,11 +102,14 @@ composer format        # Formatta il codice
    - Controllare i service provider
    - Eseguire `composer dump-autoload`
 
+<<<<<<< HEAD
 4. **Errori PHPStan**
    - Consultare [Correzioni PHPStan](modules/xot/phpstan_fixes.md)
    - Eseguire l'analisi locale con `./vendor/bin/phpstan analyse`
    - Verificare i test unitari dopo le correzioni
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 ## Development Tools
 - Laravel Debugbar
 - Laravel IDE Helper
@@ -113,6 +119,7 @@ composer format        # Formatta il codice
 - Pest
 
 ## Changelog
+<<<<<<< HEAD
 Le modifiche vengono tracciate nel repository GitHub. 
 
 ## Analisi Statica e Qualità del Codice
@@ -133,3 +140,6 @@ Le modifiche vengono tracciate nel repository GitHub.
 - [Traits del modulo](modules/xot/traits.md)
 - [Contratti](modules/xot/contracts.md)
 - [Servizi](modules/xot/services.md) 
+=======
+Le modifiche vengono tracciate nel repository GitHub. 
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)

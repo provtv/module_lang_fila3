@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 # Analisi Dettagliata dei Colli di Bottiglia - Modulo Xot
 
 ## Panoramica
@@ -10,6 +13,7 @@ Il modulo Xot è un modulo core che fornisce funzionalità base per l'intera app
 - Impatto: Overhead nella creazione di oggetti model
 - Causa: Reflection e lookup ripetitivi
 
+<<<<<<< HEAD
 # Analisi Dettagliata dei Colli di Bottiglia - Modulo Job
 
 ## Panoramica
@@ -32,12 +36,17 @@ Il modulo Media gestisce l'elaborazione e la manipolazione dei file multimediali
 - Causa: Elaborazione sincrona e mancanza di ottimizzazione
  38c1507055 (Squashed 'laravel/Modules/Media/' content from commit 4548be09a)
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 **Soluzione Proposta**:
 ```php
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 namespace Modules\Xot\Services;
 
 use Illuminate\Support\Facades\Cache;
@@ -119,6 +128,7 @@ final class QueryBuilderService
                 $relation => fn($query) => $query->select(['id', 'name'])
             ])
             ->all();
+<<<<<<< HEAD
 
 namespace Modules\Job\Services;
 
@@ -212,17 +222,23 @@ final class ImageProcessingService
               ->interlace()
               ->sharpen($params['sharpen'] ?? 10);
  38c1507055 (Squashed 'laravel/Modules/Media/' content from commit 4548be09a)
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
     }
 }
 ```
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 ## 3. Gestione Cache
 **Problema**: Strategia di caching non ottimale
 - Impatto: Hit rate basso e overhead di memoria
 - Causa: Mancanza di politiche di caching intelligenti
 
+<<<<<<< HEAD
 ## 2. Monitoraggio Job
 **Problema**: Monitoraggio insufficiente dei job
 - Impatto: Difficoltà nel debugging e ottimizzazione
@@ -235,12 +251,17 @@ final class ImageProcessingService
 - Causa: Strategia di caching inefficiente
  38c1507055 (Squashed 'laravel/Modules/Media/' content from commit 4548be09a)
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 **Soluzione Proposta**:
 ```php
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 namespace Modules\Xot\Services;
 
 use Illuminate\Support\Facades\Cache;
@@ -287,6 +308,7 @@ final class XotCacheService
         }
         
         return $tags;
+<<<<<<< HEAD
 
 namespace Modules\Job\Services;
 
@@ -490,6 +512,8 @@ final class MediaStorageService
         return $size > 1024 * 1024 && // > 1MB
                str_starts_with($type, 'image/');
  38c1507055 (Squashed 'laravel/Modules/Media/' content from commit 4548be09a)
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
     }
 }
 ```
@@ -497,8 +521,11 @@ final class MediaStorageService
 ## Metriche di Performance
 
 ### Obiettivi
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 - Tempo creazione model: < 50ms
 - Tempo costruzione query: < 100ms
 - Cache hit rate: > 95%
@@ -517,6 +544,7 @@ private function setupPerformanceMonitoring(): void
                     'sql' => $query->sql,
                     'time' => $query->time,
                     'bindings' => $query->bindings
+<<<<<<< HEAD
 
 - Tempo in coda: < 30s per job prioritari
 - Memoria per job: < 64MB
@@ -538,11 +566,16 @@ private function setupPerformanceMonitoring(): void
                     'memory' => $stats['used_memory'],
                     'peak' => $stats['used_memory_peak']
  90bf7d5b85 (Squashed 'laravel/Modules/Job/' content from commit d3ea5c83e)
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
                 ]);
         }
     });
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
     // Monitoring memoria
     $this->app->terminating(function () {
         $memoryUsage = memory_get_peak_usage(true) / 1024 / 1024;
@@ -551,6 +584,7 @@ private function setupPerformanceMonitoring(): void
             Log::channel('xot_performance')
                 ->warning('Alto utilizzo memoria', [
                     'memory_mb' => $memoryUsage
+<<<<<<< HEAD
 
     // Monitoring job
     Queue::before(function ($job) {
@@ -606,6 +640,10 @@ private function setupPerformanceMonitoring(): void
             'type' => Storage::mimeType($event->path)
         ]);
  38c1507055 (Squashed 'laravel/Modules/Media/' content from commit 4548be09a)
+=======
+                ]);
+        }
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
     });
 }
 ```
@@ -613,8 +651,11 @@ private function setupPerformanceMonitoring(): void
 ## Piano di Implementazione
 
 ### Fase 1 (Immediata)
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 - Ottimizzare model factory
 - Migliorare query builder
 - Implementare caching strategico
@@ -627,6 +668,7 @@ private function setupPerformanceMonitoring(): void
 ### Fase 3 (Lungo Termine)
 - Implementare sharding
 - Ottimizzare scalabilità
+<<<<<<< HEAD
 
 - Implementare code prioritarie
 - Migliorare monitoraggio
@@ -641,11 +683,16 @@ private function setupPerformanceMonitoring(): void
 - Implementare scaling automatico
 - Ottimizzare distribuzione job
  90bf7d5b85 (Squashed 'laravel/Modules/Job/' content from commit d3ea5c83e)
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 - Migliorare resilienza
 
 ## Note Tecniche Aggiuntive
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 ### 1. Configurazione Performance
 ```php
 // In: config/xot.php
@@ -658,6 +705,7 @@ return [
     'monitoring' => [
         'slow_query_threshold' => env('XOT_SLOW_QUERY_MS', 100),
         'memory_threshold_mb' => env('XOT_MEMORY_THRESHOLD', 100)
+<<<<<<< HEAD
 
 ### 1. Configurazione Code
 ```php
@@ -721,12 +769,17 @@ return [
         'temp_ttl' => env('MEDIA_TEMP_TTL', 86400),
         'dedup_enabled' => env('MEDIA_DEDUP_ENABLED', true)
  38c1507055 (Squashed 'laravel/Modules/Media/' content from commit 4548be09a)
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
     ]
 ];
 ```
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 ### 2. Ottimizzazione Autoloading
 ```php
 // In: composer.json
@@ -743,6 +796,7 @@ return [
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true
+<<<<<<< HEAD
 
 ### 2. Ottimizzazione Immagini
 ```php
@@ -777,11 +831,16 @@ final class ImageOptimizer
                     ->onQueue('media-optimization')
             );
  38c1507055 (Squashed 'laravel/Modules/Media/' content from commit 4548be09a)
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
     }
 }
 ```
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 ### 3. Query Optimization
 ```php
 // In: Traits/HasXotOptimizations.php
@@ -809,6 +868,7 @@ trait HasXotOptimizations
             'creator:id,name',
             'updater:id,name'
         ];
+<<<<<<< HEAD
 
 ### 2. Ottimizzazione Redis
 ```php
@@ -907,6 +967,8 @@ final class Media extends Model
             pathinfo($this->path, PATHINFO_EXTENSION)
         );
  38c1507055 (Squashed 'laravel/Modules/Media/' content from commit 4548be09a)
+=======
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
     }
 }
 ``` 

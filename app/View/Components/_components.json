@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [{"name":"flag","class":"Flag","module":null,"path":null,"ns":"Modules\\Lang\\View\\Components\\Flag"}]
 =======
 <<<<<<< HEAD
@@ -38,3 +39,21 @@
 =======
 []
 >>>>>>> 499a5da9 (.)
+=======
+[
+    {
+        "name": "dashboard.item",
+        "class": "Dashboard\\Item",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\Xot\\View\\Components\\Dashboard\\Item"
+    },
+    {
+        "name": "x-debug",
+        "class": "XDebug",
+        "module": null,
+        "path": null,
+        "ns": "Modules\\Xot\\View\\Components\\XDebug"
+    }
+]
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)

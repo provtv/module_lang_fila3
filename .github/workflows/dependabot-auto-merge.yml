@@ -13,7 +13,11 @@ jobs:
     
       - name: Dependabot metadata
         id: metadata
+<<<<<<< HEAD
         uses: dependabot/fetch-metadata@v1.6.0
+=======
+        uses: dependabot/fetch-metadata@latest
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
           

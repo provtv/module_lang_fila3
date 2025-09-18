@@ -2,7 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Lang\Providers;
+=======
+namespace Modules\Xot\Providers;
+>>>>>>> 80d56bca (Squashed 'laravel/Modules/Xot/' content from commit 88673e4f7)
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as BaseEventServiceProvider;
 
